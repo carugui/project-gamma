@@ -3,8 +3,10 @@ import { Link, Route, Routes } from 'react-router-dom'
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Topbar from  './components/topbar/Topbar'
 import './App.css'
 import './scss/style.scss'
+
 import Home from './views/Home'
 import Contact from './views/Contact'
 
@@ -13,6 +15,7 @@ function App() {
 
   return (
     <>
+      <Topbar />
       <header>
         <h1>Hola :P</h1>
         <Link to ="/contact">Contacto</Link>
