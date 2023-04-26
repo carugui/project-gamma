@@ -5,8 +5,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Topbar from  './components/topbar/Topbar'
 
-import './App.css'
-import './scss/style.scss'
+import './scss/global.scss'
 
 import Home from './views/Home'
 import Contact from './views/Contact'
