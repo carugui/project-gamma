@@ -19,7 +19,7 @@ function App() {
       <Topbar />
       
       <header>
-        <h1>Hola :P</h1>
+        <h1>Bienvenido :P</h1>
         <Link to ="/contact">Contacto</Link>
         <Link to ="/">Home</Link>
         <Link to ="/styleguide">Styleguide</Link>

@@ -5,7 +5,7 @@ function Topbar() {
  
   return (
     <>
-      <h1 className='topbar'>Hola</h1>
+      <h1 className='topbar'>Proyecto Gamma</h1>
     </>
   )
 }
