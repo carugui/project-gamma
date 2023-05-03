@@ -1,4 +1,5 @@
 @import './_typography.scss';
+@import './_variables.scss';
 
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -75,4 +76,47 @@ a:hover {
 button {
     background-color: #f9f9f9;
 }
+}
+
+/* COLORES */
+.color-green {
+    color: $color-green;
+}
+.bg-color-green {
+    background-color: $color-green;
+}
+
+.color-green-dark {
+    color: $color-green-dark;
+}
+.bg-color-green-dark {
+    background-color: $color-green-dark;
+}
+
+.color-orange {
+    color: $color-orange;
+}
+.bg-color-orange {
+    background-color: $color-orange;
+}
+
+.color-orange-dark {
+    color: $color-orange-dark;
+}
+.bg-color-orange-dark {
+    background-color: $color-orange-dark;
+}
+
+.color-yellow {
+    color: $color-yellow;
+}
+.bg-color-yellow {
+    background-color: $color-yellow;
+}
+
+.color-blue {
+    color: $color-yellow;
+}
+.bg-color-blue {
+    background-color: #37A3BB;
 }
