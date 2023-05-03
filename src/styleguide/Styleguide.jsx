@@ -18,6 +18,7 @@ export default function Styleguide () {
             <h4>Esto es un h4</h4>
             <h5>Esto es un h5</h5>
             <h6>Esto es un h6</h6>
+            <p>Esto es un párrafo</p>
         </div>
 
         <div className='section'>
