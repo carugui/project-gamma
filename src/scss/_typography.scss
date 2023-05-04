@@ -1,3 +1,14 @@
 h1 {
-    color: grey;
+    color: $color_smoke;
+    font-family: $font-family--header;
+    
+}
+
+.parrafos {
+    width: 400px;
+    text-align: left;
+    justify-content: center;
+    font-family: $font-family--parrafo;
+    background-color: $color-grey-light;
+
 }

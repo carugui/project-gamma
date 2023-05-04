@@ -1,10 +1,11 @@
 import Nav from './Nav'
 import Button from '../components/button/Button'
+import Topbar from '../components/topbar/Topbar'
 import './style.scss'
 
 export default function Styleguide () {
     return <>
-        
+        <Topbar/>
         <h1>Hola, soy el styleguide</h1>
 
         <div className='section'>
@@ -28,14 +29,18 @@ export default function Styleguide () {
         <h2 className="titular-seccion">Colores</h2>
             
             <h3>Colores Principales</h3>
-            <div className="seccion-color bg-color-green" data-color="#4C956C"></div>
-            <div className="seccion-color bg-color-green-dark" data-color="#2C6E49"></div>
-            <div className="seccion-color bg-color-orange" data-color="#F4A261"></div>
-            <div className="seccion-color bg-color-orange-dark" data-color="#E76F51"></div>
+            <div className="seccion-color bg-color-yellow"></div>
+            <div className="seccion-color bg-color-smoke"></div>
+            <div className="seccion-color bg-color-grey-dark"></div>
+            <div className="seccion-color bg-color-grey-smoot" ></div>
 
             <h3>Colores Secundarios</h3>
-            <div className="seccion-color bg-color-yellow" data-color="#E9C46A"></div>
-            <div className="seccion-color bg-color-blue" data-color="#37A3BB"></div>
+            <div className="seccion-color bg-color-yellow-smoot" data-color="#FAEBD4"></div>
+            <div className="seccion-color bg-olor-white" data-color="#ffffff"></div>
+            
+            <p className="parrafos">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, eveniet, asperiores nostrum ea dolorum, repellendus voluptatem commodi ipsam tempora delectus quia dignissimos? Nostrum corporis placeat perspiciatis quis consectetur fugit minus?
+            </p>
         </div>
         
     </>
