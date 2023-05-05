@@ -1,0 +1,17 @@
+.section {
+    
+    border-radius: 15px;
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 1px 1px 30px -1px rgba(0,0,0,0.18);
+}
+
+.seccion-color {
+    display: inline-block;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: relative; 
+}
