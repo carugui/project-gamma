@@ -36,8 +36,8 @@ export default function Styleguide () {
 
             <h3>Colores Secundarios</h3>
             <div className="seccion-color bg-color-yellow-smoot" data-color="#FAEBD4"></div>
-            <div className="seccion-color bg-olor-white" data-color="#ffffff"></div>
-            
+            <div className="seccion-color bg-color-grey-smoot" data-color="#a6a4a0;"></div>
+            <div className="seccion-color bg-color-white" data-color="#ffffff"></div>
             <p className="parrafos">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, eveniet, asperiores nostrum ea dolorum, repellendus voluptatem commodi ipsam tempora delectus quia dignissimos? Nostrum corporis placeat perspiciatis quis consectetur fugit minus?
             </p>
