@@ -20,9 +20,12 @@ $font-secondary: 'Oswald', sans-serif;
 $font-p: 'Roboto', sans-serif;
 $font-headers: 'Oswald', sans-serif;
 
-$font-size-big: 1.5rem;
-$font-size-default: 1rem;
-$font-size-small: 0.8rem;
+// 3 tamaños con sus media queries. El tamaño normal, uno más pequeño (textos legales por ejemplo), y uno más grandes
+$size-vars: (
+    "small":    0.75, // 12px
+    "default":     1,  // 16px
+    "big":       1.5   // 24px
+);
 
 // SUPER UTIL PARA POSICIONES DE Z-INDEX
 $map-layers: (
@@ -32,11 +35,3 @@ $map-layers: (
     "over":         2,
     "absolute":     3
 );
-
-
-$size-vars: (
-    "small":    0.75, // 12px
-    "default":     1,  // 16px
-    "big":       1.5   // 24px
-);
-

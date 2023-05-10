@@ -1,7 +1,3 @@
-// 3 tamaños con sus media queries. El tamaño normal, uno más pequeño (textos legales por ejemplo), y uno más grandes 
-
-
-
 @mixin font-size($font-size: $font-medium) {
     font-size: $font-size;
     @include mq(medium) {
