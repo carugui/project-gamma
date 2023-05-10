@@ -14,6 +14,8 @@ $color-list: (
     'blue': #3A86FF
 );
 
+$color-primary: map-get($color-list, 'orange');
+
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Oswald', sans-serif;
 
