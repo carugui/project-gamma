@@ -6,10 +6,37 @@ $color-yellow: #E9C46A;
 $color-yellow-light: #FFE9B3;
 $color-blue: #37A3BB;
 
-
+$color-list: (
+    'yellow': #FFBE0B,
+    'orange': #FB5607,
+    'pink': #FF006E,
+    'purple': #8338EC,
+    'blue': #3A86FF
+);
 
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Oswald', sans-serif;
 
 $font-p: 'Roboto', sans-serif;
 $font-headers: 'Oswald', sans-serif;
+
+$font-size-big: 1.5rem;
+$font-size-default: 1rem;
+$font-size-small: 0.8rem;
+
+// SUPER UTIL PARA POSICIONES DE Z-INDEX
+$map-layers: (
+    "below":        -1,
+    "default":      0,
+    "above":        1,
+    "over":         2,
+    "absolute":     3
+);
+
+
+$size-vars: (
+    "small":    0.75, // 12px
+    "default":     1,  // 16px
+    "big":       1.5   // 24px
+);
+
