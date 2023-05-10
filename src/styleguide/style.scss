@@ -1,8 +1,82 @@
 @import '../scss/variables';
+@import '.././index.css';
 
+
+//aqui van los estilos del menú horizontal y de amburguesa
+
+.Menu {
+    width: 100%;
+    background-color: $color-yellow;
+    padding: 1em;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.Menu-h1{
+    background-color: $color-grey-light;
+}
+.Nav-button{
+    background-color: $color-white;
+    display: none;
+     
+}
+.Menu-svg{
+    width: 2em;
+    height: 2em;
+}
+.Menu-nav{
+    background-color: $color-grey-light;
+    width: 100%;
+
+    
+
+}
+.Menu-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Menu-li{
+    margin: 0.5em;
+}
+
+@media screen and (max-wight:480px){
+    .Nav-button{
+        display: flex;
+    }
+    .Menu-nav {
+        width: 100%;
+
+        display:flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .Menu-ul {
+        flex-direction: column;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ //aquí comienzan los estilos de la paleta de colores
 .section {
-
-    border-radius: 15px;
+    width: 100vw;
+    border-radius: 6px;
     background-color: white;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -30,15 +104,15 @@
 }
 
 .bg-color-grey-smoot {
-    background-color: #a6a4a0;
+    background-color:$color-grey-smoot;
 }
 
 .bg-color-yellow-smoot {
-    background-color:#FAEBD4;
+    background-color:$color-yellow-smoot;
     border : 1px solid  #707070;
 }
 .bg-color-grey-light {
-    background-color: #dfdede;
+    background-color: $color-grey-light;
     border: 1px solid #707070
 }
 

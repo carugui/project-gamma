@@ -6,7 +6,7 @@ import './style.scss'
 
 export default function Styleguide () {
     return <>
-        <Topbar/>
+      
         <h1>Hola, soy el styleguide</h1>
 
         <div className='section'>
