@@ -1,11 +1,11 @@
-import './Button.scss';
+import "./Button.scss";
 
 function Button() {
-    return (
-        <>
-          <button>Soy un botón</button>
-        </>
-    )
+  return (
+    <div>
+      <button>Soy un botón</button>
+    </div>
+  );
 }
 
-export default Button
+export default Button;
