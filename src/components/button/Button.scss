@@ -1,3 +1,16 @@
-button {
-    background-color: #BFD7EA;
+@import '../../scss/global.scss';
+
+.button {
+  background-color: $color-yellow;
+  padding: $padding-unit;
+  border: 1px solid red;
+}
+
+.ghost {
+  border-color: transparent;
+}
+
+.importante {
+  background-color: green;
+  color: white;
 }
