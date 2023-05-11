@@ -1,11 +1,18 @@
 import './Button.scss';
 
-function Button() {
-    return (
-        <>
-          <button>Soy un botón</button>
-        </>
-    )
+function Button(props) {
+  const { importante, type } = props;
+  let className = 'button';
+
+  if (importante) {
+    className += ' importante';
+  }
+
+  if (type === 'ghost') {
+    className += ' ghost';
+  }
+
+  return <button className={className}>Soy un botón</button>;
 }
 
-export default Button
+export default Button;
