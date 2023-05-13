@@ -19,12 +19,11 @@ function App() {
       <Topbar />
 
       <header>
-        <h1>Bienvenido :P</h1>
+        <h1>Bienvenido</h1>
 
         {/* no poner los Links con elementos <a/> porque la pagina se vuelve a cargar, n su lugar usar <Link to="#"></Link> */}
         <Link to='/'>Home</Link>
         <Link to='/contact'>Contacto</Link>
-
         <Link to='/styleguide'>Styleguide</Link>
       </header>
 

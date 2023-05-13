@@ -42,12 +42,12 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.2em;
   line-height: 1.1;
 }
 
 button {
-  border-radius: 8px;
+  border-radius: px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
@@ -80,52 +80,6 @@ button:focus-visible {
 
 /*este es el reset de Eduardo fieroo, vamos que pasa.*/
 
-/* Definimos las Custom properties */
-:root {
-  /* Colores */
-  --negro: #393939;
-
-  /* Tipografía */
-  --tipo-principal: Helvetica, Arial, sans-serif;
-  --tipo-secundaria: Verdana;
-}
-
-/* (Opcional) Las adaptamos al modo oscuro */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --negro: #ececec;
-  }
-}
-
-/* (Opcional) Configuramos si un usuario ha activado el modo alto contraste. (WD) */
-@media (prefers-contrast: high) {
-  :root {
-  }
-}
-
-/* (Opcional) Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none !important;
-    transition: none !important;
-  }
-}
-
-/* Reseteamos los margin y paddings de todas las etiquetas */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  vertical-align: baseline;
-}
-*::before,
-*::after {
-  display: block;
-}
-
 /* Evitamos problemas con las imagenes */
 img,
 picture,
@@ -141,18 +95,6 @@ figure {
   object-position: center center;
 }
 
-/* Reseteamos los enlaces para funcionar como cajas... */
-a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  font-size: inherit;
-}
-/* ... excepto los que se encuentran en párrafos */
-p a {
-  display: inline;
-}
-
 /* Quitamos los puntos de los <li> */
 li {
   list-style-type: none;
@@ -163,28 +105,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Desactivamos estilos por defecto de las principales etiquetas de texto */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-span,
-a,
-strong,
-blockquote,
-i,
-b,
-u,
-em {
-  font-size: inherit;
-  font-weight: inherit;
-  font-style: inherit;
-  text-decoration: none;
-  color: inherit;
-}
+
 /* Evitamos problemas con los pseudoelementos de quotes */
 blockquote:before,
 blockquote:after,
@@ -232,18 +153,4 @@ svg {
   fill: currentColor;
 }
 
-/* Configuramos la tipografía para toda la web */
-body {
-  min-height: 100vh;
-  font-size: 100%;
-  font-family: var(--tipo-principal);
-  color: var(--negro);
-  /* (Opcional) */
-  hyphens: auto;
-  /* (Opcional) */
-  font-smooth: always;
-  /* (Opcional) */
-  -webkit-font-smoothing: antialiased;
-  /* (Opcional) */
-  -moz-osx-font-smoothing: grayscale;
-}
+

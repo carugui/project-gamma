@@ -1,11 +1,14 @@
 import "./Topbar.scss";
 
-function Topbar() {
+
+function Topbar(props) {
+  const { Nav } =props;
+
+
   return (
-    <div>
+    
       <h1 className="topbar">Proyecto Gamma</h1>
-      
-    </div>
+    
   );
 }
 

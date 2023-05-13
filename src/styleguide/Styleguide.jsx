@@ -1,6 +1,5 @@
 import Nav from './Nav';
 import Button from '../components/button/Button';
-import Topbar from '../components/topbar/Topbar';
 import './style.scss';
 
 export default function Styleguide() {
@@ -19,9 +18,11 @@ export default function Styleguide() {
         <h6>Esto es un h6</h6>
       </div>
 
-      <div className='section'>
+      <div className='section botones'>
         <Button importante type='ghost' />
         <Button />
+        <Button importate type hover='hover' />
+        <Button transform='transform' />
       </div>
 
       <div className='section'>
@@ -37,12 +38,15 @@ export default function Styleguide() {
         <div className='seccion-color bg-color-yellow-smoot'></div>
         <div className='seccion-color bg-color-grey-light'></div>
         <div className='seccion-color bg-color-white'></div>
-        <p className='parrafos'>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, eveniet, asperiores nostrum ea dolorum,
-          repellendus voluptatem commodi ipsam tempora delectus quia dignissimos? Nostrum corporis placeat perspiciatis
-          quis consectetur fugit minus?
-        </p>
       </div>
+      <div className='section parrafos'>
+          <p className='parrafos'>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, eveniet, asperiores nostrum ea dolorum,
+            repellendus voluptatem commodi ipsam tempora delectus quia dignissimos? Nostrum corporis placeat perspiciatis
+            quis consectetur fugit minus?
+          </p>
+      </div>
+      
     </>
   );
 }
