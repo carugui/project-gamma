@@ -1,0 +1,14 @@
+//PARA MAPA Z-INDEX
+@function z($layer) {
+    @return map-get($map-layers, $layer);
+}
+
+//PARA MAPA TAMAÑO DE FUENTE
+@function fs($font-size) {
+    @return map-get($size-vars, $font-size) * 1rem;
+}
+
+//PARA MAPA TAMAÑO DE FUENTE
+@function fs($font-size) {
+    @return map-get($size-vars, $font-size) * 1rem;
+}

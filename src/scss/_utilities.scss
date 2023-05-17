@@ -1,0 +1,17 @@
+// PARA CREAR CLASES .fs-small, .fs-default, .fs-big
+@each $name, $value in $size-vars {
+    .fs-#{$name} {
+        font-size: $value;
+    }
+}
+
+// PARA CREAR CLASES .color-yellow, .color-bg-yellow... con cada color
+@each $key, $value in $color-list {
+    .color-#{$key} {
+        color: $value;
+    }
+    
+    .color-bg-#{$key} {
+        background-color: $value;
+    }
+}

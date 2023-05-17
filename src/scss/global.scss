@@ -1,6 +1,8 @@
 @import './_variables.scss';
+@import './mixins.scss';
+@import './functions';
 @import './_typography.scss';
-
+@import './utilities';
 
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

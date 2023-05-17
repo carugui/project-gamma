@@ -6,10 +6,34 @@ $color-yellow: #E9C46A;
 $color-yellow-light: #FFE9B3;
 $color-blue: #37A3BB;
 
+$color-list: (
+    'yellow': #FFBE0B,
+    'orange': #FB5607,
+    'pink': #FF006E,
+    'purple': #8338EC,
+    'blue': #3A86FF
+);
 
+$color-primary: map-get($color-list, 'orange');
 
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Oswald', sans-serif;
 
 $font-p: 'Roboto', sans-serif;
 $font-headers: 'Oswald', sans-serif;
+
+// 3 tamaños con sus media queries. El tamaño normal, uno más pequeño (textos legales por ejemplo), y uno más grandes
+$size-vars: (
+    "small":    0.75, // 12px
+    "default":     1,  // 16px
+    "big":       1.5   // 24px
+);
+
+// SUPER UTIL PARA POSICIONES DE Z-INDEX
+$map-layers: (
+    "below":        -1,
+    "default":      0,
+    "above":        1,
+    "over":         2,
+    "absolute":     3
+);
