@@ -21,10 +21,10 @@ h1 {
 }
 
 .parrafos {
-    width: 400px;
-    text-align: left;
-    justify-content: center;
-    font-family: $font-family--parrafo;
-    background-color: $color-grey-light;
-
+  display: flex;
+  font-family: $font-family--parrafo;
+  padding: $padding-unit;
+  text-align: left;
 }
+
+    

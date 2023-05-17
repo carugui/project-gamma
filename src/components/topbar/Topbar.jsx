@@ -1,14 +1,15 @@
-import './Topbar.scss';
+import "./Topbar.scss";
 
 
-function Topbar() {
- 
+function Topbar(props) {
+  const { Nav } =props;
+
+
   return (
-    <>
-      <h1 className='topbar'>Proyecto Gamma</h1>
-      
-    </>
-  )
+    
+      <h1 className="topbar">Proyecto Gamma</h1>
+    
+  );
 }
 
-export default Topbar
+export default Topbar;
