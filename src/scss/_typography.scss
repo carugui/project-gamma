@@ -1,8 +1,4 @@
-h1 {
-    color: $color_smoke;
-    font-family: $font-family--header;
-    
-}
+
 @each $header, $margin-bot, $font-size,
     $line-height
         in (h1, 0.5rem, 3, 1.1)
@@ -19,7 +15,7 @@ h1 {
         line-height: $line-height;
     }
 }
-
+//mirar esto de arriba que ni ide aque es
 .parrafos {
   display: flex;
   font-family: $font-family--parrafo;
