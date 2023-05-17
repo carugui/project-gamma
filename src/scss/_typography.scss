@@ -1,0 +1,26 @@
+
+@each $header, $margin-bot, $font-size,
+    $line-height
+        in (h1, 0.5rem, 3, 1.1)
+        (h2, 0.5rem, 2, 1.5)
+        (h3, 1.5em, 1.4, 1.5)
+        (h4, 1.5em, 1.3, 1.5)
+        (h5, 0.5rem, 1.2, 1.5)
+        (h6, 0.5rem, 0.9, 1.3)
+{
+    #{$header},
+    .#{$header} {
+        margin-bottom: $margin-bot;
+        font-size: ($font-size) * 1rem;
+        line-height: $line-height;
+    }
+}
+//mirar esto de arriba que ni ide aque es
+.parrafos {
+  display: flex;
+  font-family: $font-family--parrafo;
+  padding: $padding-unit;
+  text-align: left;
+}
+
+    

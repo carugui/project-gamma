@@ -1,0 +1,48 @@
+@import "../../scss/global.scss";
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  margin: 21px;
+  background-color: $color-yellow;
+  padding: $padding-unit;
+  border: 1px solid $color-black;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.botones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ghost {
+  border-color: transparent;
+
+}
+
+.importante {
+  background-color: $color-blue;
+  color: white;
+}
+
+.hover {
+  &:hover {
+    background-color: $color-blue;
+    color: $color-white;
+  }
+}
+
+.transform {
+  background-color: $color-white;
+  color: $color-black;
+    &:hover {
+      background-color: $color-yellow;
+      
+      width: 200px;
+      height: auto;
+      display: inline;
+    }
+}
