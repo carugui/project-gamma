@@ -32,19 +32,7 @@ const Nav = ()=> {
 {/*toca copiar un archivo reset en index.css*/ }
 
         </header>
-            
-             
-
-
-      
-        
-
-        
-
-        
-
-    
-        
+               
     </>
 }
 export default Nav

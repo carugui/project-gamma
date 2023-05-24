@@ -1,6 +1,7 @@
 import Nav from './Nav';
 import Button from '../components/button/Button';
 import './style.scss';
+import React, { useState, useEffect } from 'react';
 
 export default function Styleguide() {
   return (
