@@ -1,21 +1,25 @@
 @import "../../scss/global.scss";
 
-.button {
+.buttonprincipal {
+  background-color: $orange-web;
+  border: solid 2px;
   display: flex;
-  justify-content: space-between;
-  margin: 21px;
-  background-color: $color-yellow;
-  padding: $padding-unit;
-  border: 1px solid $color-black;
-  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 1em;
 }
+
+
 .botones {
   display: flex;
+  justify-content: space-between;
+  
+  background-color: $color-white;
+  padding: $padding-unit;
+  
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .ghost {
@@ -23,26 +27,11 @@
 
 }
 
-.importante {
-  background-color: $color-blue;
-  color: white;
-}
 
-.hover {
+.buttonprincipal {
   &:hover {
-    background-color: $color-blue;
+    background-color: $silver;
     color: $color-white;
   }
 }
 
-.transform {
-  background-color: $color-white;
-  color: $color-black;
-    &:hover {
-      background-color: $color-yellow;
-      
-      width: 200px;
-      height: auto;
-      display: inline;
-    }
-}

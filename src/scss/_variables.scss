@@ -13,3 +13,38 @@ $padding-unit: 15px;
 $font-family--header: 'Oswald';
 $font-family--parrafo: 'reveret';
 $font-family--gammaTitle: 'Quicksand';
+
+
+
+/* SCSS HEX */
+$byzantine-blue: #0052e0ff;
+$orange-web: #ffa400ff;
+$orange-smoot: #BE7404;
+$eerie-black: #222222ff;
+$silver: #a5a5a5ff;
+$platinum: #e5e5e6ff;
+
+/* SCSS HSL */
+$byzantine-blue: hsla(218, 100%, 44%, 1);
+$orange-web: hsla(39, 100%, 50%, 1);
+$eerie-black: hsla(0, 0%, 13%, 1);
+$silver: hsla(0, 0%, 65%, 1);
+$platinum: hsla(240, 2%, 90%, 1);
+
+/* SCSS RGB */
+$byzantine-blue: rgba(0, 82, 224, 1);
+$orange-web: rgba(255, 164, 0, 1);
+$eerie-black: rgba(34, 34, 34, 1);
+$silver: rgba(165, 165, 165, 1);
+$platinum: rgba(229, 229, 230, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0052e0ff, #ffa400ff, #222222ff, #a5a5a5ff, #e5e5e6ff);
+$gradient-right: linear-gradient(90deg, #0052e0ff, #ffa400ff, #222222ff, #a5a5a5ff, #e5e5e6ff);
+$gradient-bottom: linear-gradient(180deg, #0052e0ff, #ffa400ff, #222222ff, #a5a5a5ff, #e5e5e6ff);
+$gradient-left: linear-gradient(270deg, #0052e0ff, #ffa400ff, #222222ff, #a5a5a5ff, #e5e5e6ff);
+$gradient-top-right: linear-gradient(45deg, #0052e0ff, #ffa400ff, #222222ff, #a5a5a5ff, #e5e5e6ff);
+$gradient-bottom-right: linear-gradient(135deg, #0052e0ff, #ffa400ff, #222222ff, #a5a5a5ff, #e5e5e6ff);
+$gradient-top-left: linear-gradient(225deg, #0052e0ff, #ffa400ff, #222222ff, #a5a5a5ff, #e5e5e6ff);
+$gradient-bottom-left: linear-gradient(315deg, #0052e0ff, #ffa400ff, #222222ff, #a5a5a5ff, #e5e5e6ff);
+$gradient-radial: radial-gradient(#0052e0ff, #ffa400ff, #222222ff, #a5a5a5ff, #e5e5e6ff);

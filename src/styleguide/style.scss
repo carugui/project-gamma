@@ -4,7 +4,6 @@
 //aqui van los estilos del menú horizontal y de amburguesa
 
 .Menu {
-  width: 100%;
   background-color: $color-yellow;
   padding: 1em;
 
@@ -18,7 +17,7 @@
 }
 .Nav-button {
   background-color: $color-white;
-  display: none;
+  display: block //aqui ponen clase display: none para ocultar el menu en desktop
 }
 .Menu-svg {
   width: 2em;
@@ -26,7 +25,9 @@
 }
 .Menu-nav {
   background-color: $color-grey-light;
-  width: 100%;
+  width: 100vw;
+  
+
 }
 .Menu-ul {
   display: flex;
@@ -57,7 +58,7 @@
 
 //aquí comienzan los estilos de los contenedores de la paleta de colores
 .section {
-  width: 100vw;
+  
   border-radius: 6px;
   background-color: white;
   padding-top: 2rem;
