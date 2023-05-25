@@ -3,7 +3,8 @@ import Button from '../components/button/Button';
 import './style.scss';
 import React, { useState, useEffect } from 'react';
 
-export default function Styleguide() {
+export default 
+function Styleguide() {
   return (
     <>
       <h1>Hola, soy el styleguide</h1>
