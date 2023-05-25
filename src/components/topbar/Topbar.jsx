@@ -32,8 +32,8 @@ const ImageLoopAnimation = () => {
   }, []);
 
   return (
-    <div>
-      <img src={images[currentImage]} alt="SVG Image" />
+    <div className="topbar">
+        <img className="pajaro" src={images[currentImage]} alt="SVG Image" />
     </div>
   );
 };

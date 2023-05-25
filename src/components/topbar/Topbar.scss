@@ -2,6 +2,23 @@
 @import '../../scss/mixins.scss';
 
 .topbar {
-  background-color: #bfd7ea;
+  display: flex;
+  background-image: url(../../../public/imagesSVG/tramaorange.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+
+.pajaro {
+  
+  position:absolute;
+  width: 400px;
+  height: 400px;
+
 }
 
