@@ -1,11 +1,17 @@
 import Nav from './Nav'
 import Button from '../components/button/Button'
 import './style.scss'
+import IconChevron from '../components/svg/IconChevron'
 
-export default function Styleguide () {
+
+export default function Styleguide ( ) {
     return <>
         
         <h1>Hola, soy el styleguide</h1>
+        <div className='pink'>
+            <IconChevron size="big" className="green svg--big"/>
+        </div>
+        
 
         <div className='section'>
             <Nav />
