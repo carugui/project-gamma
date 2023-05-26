@@ -20,9 +20,7 @@ function App() {
 
   return (
     <>
-      < Topbar/>
-      < Portrait/>
-      < Portfolio/>
+      
 
 
       <header>
@@ -33,6 +31,7 @@ function App() {
         <Link to='/topbar'>Topbar</Link>
         <Link to='/contact'>Contacto</Link>
         <Link to='/styleguide'>Styleguide</Link>
+        <Link to='/portfolio'>Portfolio</Link>
 
         
       </header>

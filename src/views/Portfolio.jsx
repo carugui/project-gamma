@@ -1,13 +1,17 @@
-import { Route } from "react-router-dom";
+import Topbar from "../../src/components/topbar/Topbar";
+import Portrait from "../../src/components/portrait/Portrait";
 
-
+import React, { useState, useEffect } from 'react';
 
 
 export default function Portfolio() {
     return (
       <>
         <h1>soy el portafolio</h1>
-        
+        < Topbar/>
+        < Portrait/>
+       
+
       </>
     );
 }
@@ -19,14 +23,11 @@ export default function Portfolio() {
 
 /* 
 
-            <div> no sirve
-            <Route path='/topbar/' element={<Topbar/>} />
-            <Route path='/portrait' element={<Portrait/>} />
-            </div>
+            
 
 
 
-
+ < Services/> 
 
 import React,  {useState, useEffect} from 'react';
 
