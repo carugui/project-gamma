@@ -6,27 +6,47 @@ $color-yellow: #E9C46A;
 $color-yellow-light: #FFE9B3;
 $color-blue: #37A3BB;
 
+$blue_dark_2: #003166;
+$blue_dark_1: #004999;
+$blue_neutral_3: #006BDF;
+$blue_neutral_2: #2990FF;
+$blue_neutral_1: #61ADFF;
+$blue_light_3: #99CAFF;
+$blue_light_2: #CCE5FF;
+$blue_light_1: #E8EFFD;
+
+$white_eggshell: #FCF9F4;
+
+$black: #313131;
+$grey_darker: #5E5E5E;
+$grey_dark: #9D9D9D;
+$grey_lighter: #F0F0F0;
+$grey_light: #D9D9D9;
+$white: #FFFFFF;
+
 $color-list: (
-    'yellow': #FFBE0B,
-    'orange': #FB5607,
-    'pink': #FF006E,
-    'purple': #8338EC,
-    'blue': #3A86FF
+    'blue_dark_2': $blue_dark_2,
+    'blue_dark_1': $blue_dark_1,
+    'blue_neutral_3': $blue_neutral_3,
+    'blue_neutral_2': $blue_neutral_2,
+    'blue_neutral_1': $blue_neutral_1,
+    'blue_light_3': $blue_light_3,
+    'blue_light_2': $blue_light_2,
+    'blue_light_1': $blue_light_1
 );
 
-$color-primary: map-get($color-list, 'orange');
+$color-primary: map-get($color-list, 'blue_dark_1');
 
-$font-primary: 'Roboto', sans-serif;
-$font-secondary: 'Oswald', sans-serif;
+$font-primary: 'Nunito', sans-serif;
 
-$font-p: 'Roboto', sans-serif;
-$font-headers: 'Oswald', sans-serif;
+$font-p: $font-primary;
+$font-headers: $font-primary;
 
 // 3 tamaños con sus media queries. El tamaño normal, uno más pequeño (textos legales por ejemplo), y uno más grandes
 $size-vars: (
-    "small":    0.75, // 12px
-    "default":     1,  // 16px
-    "big":       1.5   // 24px
+    "small":    0.75rem, // 12px
+    "default":     1rem,  // 16px
+    "big":       1.5rem   // 24px
 );
 
 // SUPER UTIL PARA POSICIONES DE Z-INDEX
@@ -37,3 +57,6 @@ $map-layers: (
     "over":         2,
     "absolute":     3
 );
+
+$border_radius_regular: 6px;
+$border_thickness: 3px;

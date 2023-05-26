@@ -1,5 +1,23 @@
 @import '../../scss/mixins.scss';
+@import '../../scss/variables.scss';
 
 .topbar {
-    background-color: #BFD7EA;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $blue_light_2;
+    width: 100vw;
+    border: $border_thickness solid $color-primary;
+    border-radius: $border_radius_regular;
+    padding: 0.25rem 4rem;
+}
+
+nav ul {
+    position: absolute;
+    left: 0;
+    margin: 0;
+    background-color: $blue_light_2;
+    border: $border_thickness solid $color-primary;
+    border-radius: $border_radius_regular;
 }
