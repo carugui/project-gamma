@@ -1,7 +1,8 @@
 @import '../../scss/global.scss';
 @import '../../scss/mixins.scss';
+@import '../../scss/variables';
 
-.topbar {
+.background {
   display: flex;
   background-image: url(../../../public/imagesSVG/tramaorange.svg);
   background-position: center;
@@ -10,12 +11,9 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
- 
-
 }
 
-.pajaro {
-  
+.pajaro {  
   position:absolute;
   width: 400px;
   height: 400px;

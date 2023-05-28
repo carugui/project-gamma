@@ -1,6 +1,6 @@
-import './services.scss';
+import './cards.scss';
 
-const Services = () => {
+const Cards = () => {
     return (
       <>
        <h1>Hola soy tu tercer componente</h1>
@@ -68,3 +68,5 @@ const Services = () => {
       </>
     );
   };
+
+  export default Cards

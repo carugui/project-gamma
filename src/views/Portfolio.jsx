@@ -1,5 +1,13 @@
 import Topbar from "../../src/components/topbar/Topbar";
 import Portrait from "../../src/components/portrait/Portrait";
+import Cards from "../../src/components/cards/Cards";
+
+//import Artshop from "../components/artshop/Artshop";
+//import Artshop from "../../src/components/artshop/Artshop.jsx";
+
+//import Artshop from "/Users/andreacasanova/Documents/ESAT CURSO/FRONT-END/About me/2about-me/styleguide2/src/components/artshop/Artshop.jsx";
+
+
 
 import React, { useState, useEffect } from 'react';
 
@@ -10,11 +18,15 @@ export default function Portfolio() {
         <h1>soy el portafolio</h1>
         < Topbar/>
         < Portrait/>
+        < Cards />
+        < Artshop />
+        
        
 
       </>
     );
 }
+
 
 
 

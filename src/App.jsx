@@ -8,8 +8,9 @@ import Contact from './views/Contact';
 import Styleguide from './styleguide/Styleguide';
 import Topbar from './components/topbar/Topbar';
 import Portfolio from './views/Portfolio';
+import Cards from './components/cards/Cards';
 import Portrait from './components/portrait/Portrait';
-
+import Artshop from './components/artshop/Artshop';
 
 
 
@@ -43,6 +44,8 @@ function App() {
           <Route path='/portfolio' element={<Portfolio/>} />          
           <Route path='/contact' element={<Contact />} />
           <Route path='/styleguide' element={<Styleguide />} />
+          <Route path='/cards' element={<Cards />} />
+          <Route path='/artshop' element={<Artshop />} />
           
         </Routes>
       </main>
