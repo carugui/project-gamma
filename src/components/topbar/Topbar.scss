@@ -13,11 +13,16 @@
     padding: 0.25rem 4rem;
 }
 
-nav ul {
+.nav__ul {
+    display: none;
     position: absolute;
     left: 0;
     margin: 0;
     background-color: $blue_light_2;
     border: $border_thickness solid $color-primary;
     border-radius: $border_radius_regular;
+}
+
+.nav__ul--show {
+    display: block;
 }
