@@ -10,9 +10,21 @@
     width: 100vw;
     border: $border_thickness solid $color-primary;
     border-radius: $border_radius_regular;
-    padding: 0.25rem 4rem;
+
+    &__item {
+        width: 60px;
+        display: flex;
+        flex-direction: row;
+        width: calc(100vw/3);
+    }
 }
 
+.topbar a {
+    text-decoration: none;
+}
+.nav {
+    width: 100%;
+}
 .nav__ul {
     display: none;
     position: absolute;
@@ -21,8 +33,27 @@
     background-color: $blue_light_2;
     border: $border_thickness solid $color-primary;
     border-radius: $border_radius_regular;
+    list-style-type: none;
+    padding: 0.25rem 1rem;
+    width: 100vw;
 }
 
 .nav__ul--show {
     display: block;
 }
+
+.nav__button {
+    background-color: transparent;
+    padding: 0;
+    color: $color-primary;
+    text-transform: none;
+    font-weight: 500;
+    width: 100%;
+}
+
+.nav__button--pressed {
+    background-color: $color-primary;
+    color: $white;
+    border-radius: 0%;
+}
+

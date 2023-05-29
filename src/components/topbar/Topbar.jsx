@@ -29,24 +29,26 @@ function Topbar() {
     <>
       <header className='topbar'>
 
-        <nav>
-          <button onClick={()=>{setOpen(!open)}}>Menú</button>
-          <ul className={`nav__ul ${open ? 'nav__ul--show' : ''}`}>
-            <li>
-              <a href="" >Proyectos</a>
-            </li>
-            <li>
-              <a href="" >Sobre mí</a>
-            </li>
-            <li>
-              <a href="">Correo</a>
-            </li>
-          </ul>
-        </nav>
+        <div className='topbar__item'>
+          <nav className='nav' ref={menuRef}>
+            <button className={`nav__button ${open ? 'nav__button--pressed' : ''}`}onClick={()=>{setOpen(!open)}}>Menú</button>
+            <ul className={`nav__ul ${open ? 'nav__ul--show' : ''}`}>
+              <li className='nav__item'>
+                <a href="" >Proyectos</a>
+              </li>
+              <li className='nav__item'>
+                <a href="" >Sobre mí</a>
+              </li>
+              <li className='nav__item'>
+                <a href="">Correo</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
-        <Link to ="/">Carugui</Link>
+        <Link className='topbar__item'to ="/">Carugui</Link>
 
-        <div>Lun 23:12</div>
+        <div className='topbar__item'>Lun 23:12</div>
 
       </header>
     </>
