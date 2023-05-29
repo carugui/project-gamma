@@ -1,5 +1,7 @@
 @import './variables.scss';
 @import './typography.scss';
+@import './../components/artshop/artshop.scss';
+@import '../components/portrait/portrait.scss';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -53,7 +55,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: $color-yellow;
   cursor: pointer;
   transition: border-color 0.25s;
 }

@@ -1,7 +1,8 @@
 import Topbar from "../../src/components/topbar/Topbar";
 import Portrait from "../../src/components/portrait/Portrait";
 import Cards from "../../src/components/cards/Cards";
-
+import Artshop from "../../src/components/artshop/Artshop";
+import Form from "../../src/components/form/Form";
 //import Artshop from "../components/artshop/Artshop";
 //import Artshop from "../../src/components/artshop/Artshop.jsx";
 
@@ -20,6 +21,13 @@ export default function Portfolio() {
         < Portrait/>
         < Cards />
         < Artshop />
+        < Form/>
+
+      
+        
+        
+        
+      
         
        
 
@@ -35,11 +43,10 @@ export default function Portfolio() {
 
 /* 
 
-            
-
-
-
- < Services/> 
+   
+         
+ < Artshop />
+ < Form/> 
 
 import React,  {useState, useEffect} from 'react';
 

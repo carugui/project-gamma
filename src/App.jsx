@@ -11,6 +11,7 @@ import Portfolio from './views/Portfolio';
 import Cards from './components/cards/Cards';
 import Portrait from './components/portrait/Portrait';
 import Artshop from './components/artshop/Artshop';
+import Form from './components/form/Form';
 
 
 
@@ -32,7 +33,7 @@ function App() {
         <Link to='/topbar'>Topbar</Link>
         <Link to='/contact'>Contacto</Link>
         <Link to='/styleguide'>Styleguide</Link>
-        <Link to='/portfolio'>Portfolio</Link>
+        <Link to='/Portfolio'>Portfolio</Link>
 
         
       </header>
@@ -40,12 +41,13 @@ function App() {
       <main>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/topbar/' element={<Topbar/>} />
-          <Route path='/portfolio' element={<Portfolio/>} />          
+          <Route path='/topbar' element={<Topbar/>} />
+          <Route path='/Portfolio' element={<Portfolio/>} />          
           <Route path='/contact' element={<Contact />} />
           <Route path='/styleguide' element={<Styleguide />} />
           <Route path='/cards' element={<Cards />} />
           <Route path='/artshop' element={<Artshop />} />
+          <Route path='/form' element={<Form />} />
           
         </Routes>
       </main>
