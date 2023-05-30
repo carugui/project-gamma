@@ -4,12 +4,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Topbar from  './components/topbar/Topbar'
+import IconFile from './components/svg/IconFile'
+import FileDesktop from './components/desktopItems/FileDesktop'
+
 
 import './scss/global.scss'
 
 import Home from './views/Home'
 import Contact from './views/Contact'
 import Styleguide from './styleguide/Styleguide'
+import Draggable from 'react-draggable'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -31,6 +35,12 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/styleguide" element={<Styleguide />} />
         </Routes>
+        <IconFile></IconFile>
+        
+        <section>
+          <FileDesktop text="Sobre mí"/>
+        </section>
+
       </main>
     </>
     
