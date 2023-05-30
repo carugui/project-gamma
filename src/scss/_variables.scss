@@ -44,9 +44,15 @@ $font-headers: $font-primary;
 
 // 3 tamaños con sus media queries. El tamaño normal, uno más pequeño (textos legales por ejemplo), y uno más grandes
 $size-vars: (
-    "small":    0.75rem, // 12px
-    "default":     1rem,  // 16px
-    "big":       1.5rem   // 24px
+    "xx-small"  :    .5,  // 11px
+    "x-small"    :    .75,  // 12px
+    "small"   :    .875, // 14px
+    "medium"   :    1,    // 16px
+    "big" :    1.25, // 20px
+    "x-big"      :    1.5,  // 24px
+    "xx-big"    :    2,  // 32px
+    "xxx-big"   :    2.5,  // 40px
+    "huge"     :    6  // 96px
 );
 
 // SUPER UTIL PARA POSICIONES DE Z-INDEX

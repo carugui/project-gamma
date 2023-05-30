@@ -6,6 +6,7 @@ import viteLogo from '/vite.svg'
 import Topbar from  './components/topbar/Topbar'
 import IconFile from './components/svg/IconFile'
 import FileDesktop from './components/desktopItems/FileDesktop'
+import FolderDesktop from './components/desktopItems/FolderDesktop'
 
 
 import './scss/global.scss'
@@ -39,6 +40,7 @@ function App() {
         
         <section>
           <FileDesktop text="Sobre mí"/>
+          <FolderDesktop text="Proyectos"/>
         </section>
 
       </main>
