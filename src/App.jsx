@@ -33,7 +33,7 @@ function App() {
           <Route path="/styleguide" element={<Styleguide />} />
         </Routes>
         
-        <section>
+        <section className='section__desktopItems'>
           <FolderDesktop text="Proyectos"/>
           <FileDesktop text="Sobre mí"/>
           <MailDesktop text="Correo" />

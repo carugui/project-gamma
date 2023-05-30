@@ -8,3 +8,13 @@ body {
     font-family: $font-primary;
     color: $color-primary;
 }
+
+main {
+    padding: 60px;
+}
+.section__desktopItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}

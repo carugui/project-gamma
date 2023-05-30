@@ -1,5 +1,6 @@
 @import '../../scss/mixins.scss';
 @import '../../scss/variables.scss';
+@import '../../scss/functions.scss';
 
 .topbar {
     display: flex;
@@ -12,10 +13,8 @@
     border-radius: $border_radius_regular;
 
     &__item {
-        width: 60px;
         display: flex;
         flex-direction: row;
-        width: calc(100vw/3);
     }
 }
 
@@ -49,6 +48,7 @@
     text-transform: none;
     font-weight: 500;
     width: 100%;
+    font-size: fs(medium);
 }
 
 .nav__button--pressed {
