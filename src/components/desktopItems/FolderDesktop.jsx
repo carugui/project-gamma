@@ -9,7 +9,7 @@ function FolderDesktop(props) {
             <div ref={nodeRef}>
             
                 <a href="instagram.com"><IconFolder></IconFolder></a>
-                <a href=""><h1 className="">{props.text}</h1></a>
+                <a href=""><h1 className="h5">{props.text}</h1></a>
                 
             </div>
         </Draggable>
