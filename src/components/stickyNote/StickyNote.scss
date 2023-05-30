@@ -1,0 +1,35 @@
+@import '../../scss/_variables.scss';
+
+.stickyNote {
+    position: relative;
+    padding: 20px;
+    background: $white_eggshell;
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 20.00px),calc(100% - 20.00px) 100%,0 100%);
+    box-shadow:inset 0px 0px 0px 3px $color-primary;
+    border-radius: 6px;
+    
+}
+
+.stickyNote:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: $color-primary;
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 20.00px),calc(100% - 20.00px) 100%,0 100%,0 0,3px  3px ,3px calc(100% - 3px),calc(100% - 20.00px - 1.24px) calc(100% - 3px),calc(100% - 3px) calc(100% - 20.00px - 1.24px),calc(100% - 3px) 3px,3px 3px);
+    border-radius: 6px;
+}
+
+
+.stickyNote:after {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    right: 0;
+    content:'';
+    background: transparent;
+    border-width:3px 0 0 3px;
+    border-color: $color-primary;
+    border-style: solid;
+    border-radius: 6px 0;
+}

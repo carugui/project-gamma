@@ -4,6 +4,7 @@ import Topbar from  './components/topbar/Topbar'
 import FileDesktop from './components/desktopItems/FileDesktop'
 import FolderDesktop from './components/desktopItems/FolderDesktop'
 import MailDesktop from './components/desktopItems/MailDesktop'
+import StickyNote from './components/stickyNote/StickyNote'
 
 
 import './scss/global.scss'
@@ -39,6 +40,8 @@ function App() {
           <MailDesktop text="Correo" />
           <FolderDesktop text="Redes Sociales"/>
         </section>
+
+        <StickyNote text="¡Hola! Soy Carla, bienvenid@ a mi página web. Soy una diseñadora y progamadora web en Valencia" />
 
       </main>
     </>
