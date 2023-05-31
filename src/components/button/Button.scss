@@ -1,4 +1,5 @@
 @import '../../scss/_variables.scss';
+@import '../../scss/_functions.scss';
 
 button, .btn {
     box-sizing: border-box;
@@ -6,7 +7,7 @@ button, .btn {
     border-radius: $border_radius_regular;
     border: none;
     padding: 0.6em 1.2em;
-    font-size: map-get($size-vars, 'default'); //1 rem, 16px
+    font-size: fs(medium); //1 rem, 16px
     font-weight: 700;
     font-family: $font-primary;
     text-transform: uppercase;

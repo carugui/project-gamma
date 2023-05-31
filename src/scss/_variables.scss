@@ -32,7 +32,8 @@ $color-list: (
     'blue_neutral_1': $blue_neutral_1,
     'blue_light_3': $blue_light_3,
     'blue_light_2': $blue_light_2,
-    'blue_light_1': $blue_light_1
+    'blue_light_1': $blue_light_1,
+    'white_eggshell':$white_eggshell
 );
 
 $color-primary: map-get($color-list, 'blue_dark_1');

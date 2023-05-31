@@ -25,7 +25,15 @@
     padding-bottom: 2rem;
     margin-bottom: 2rem;
     box-shadow: 1px 1px 30px -1px rgba(0,0,0,0.18);
+    padding: 2rem;
+
+    &__header {
+        border-bottom: 3px solid #004999;
+        opacity: 1;
+    }
 }
+
+
 
 .seccion-color {
     display: inline-block;
