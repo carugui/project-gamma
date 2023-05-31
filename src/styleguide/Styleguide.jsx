@@ -28,9 +28,33 @@ export default function Styleguide ( ) {
             <h6>Este es un encabezado h6.</h6>
         </section>
 
-        <div className='section'>
-            <Button />
-        </div>
+        <section className='section section__buttons'>
+            <h2 className="section__header">Botones</h2>
+
+            <div>
+                <Button text='Primario' size='x-big'/>
+                <Button text='Secundario' type='secondary' size='x-big'/>
+                <Button text='Desabilitado' status='disabled' size='x-big'/>
+            </div>
+
+            <div>
+                <Button text='Primario' size='big'/>
+                <Button text='Secundario' type='secondary' size='big'/>
+                <Button text='Desabilitado' status='disabled' size='big'/>
+            </div>
+
+            <div>
+                <Button text='Primario'/>
+                <Button text='Secundario' type='secondary'/>
+                <Button text='Desabilitado' status='disabled'/>
+            </div>
+
+            <div>
+                <Button text='Primario' size='small'/>
+                <Button text='Secundario' type='secondary' size='small'/>
+                <Button text='Desabilitado' status='disabled' size='small'/>
+            </div>
+        </section>
 
         <div className='section'>
         <h2 className="titular-seccion">Colores</h2>

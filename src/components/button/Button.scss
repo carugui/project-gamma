@@ -14,11 +14,53 @@ button, .btn {
     cursor: pointer;
     color: white;
     text-decoration: none;
+
+    &:hover {
+        background-color: $blue_dark_2;
+        border-color: $blue_dark_2;
+    }
+
+    &:disabled {
+        background-color: $grey_light;
+        border-color: $grey_light;
+        cursor: not-allowed;
+    }
 }
 
-.btn--secondary {
+.btn {
+
+    &--secondary {
     box-sizing: border-box;
     background-color: transparent;
     border: $border_thickness solid $color-primary;
     color: $color-primary;
+
+        &:hover {
+            background-color: transparent;
+            border-color: $color-primary;
+            box-shadow:inset 0px 0px 0px 1px $color-primary;
+        }
+
+        &:disabled {
+            border-color: $grey_light;
+            cursor: not-allowed;
+        }
+    }
+
+    &--small {
+        font-size: fs(small);
+        padding: 0.6em 1.12em;
+    }
+
+    &--big {
+        font-size: fs(x-big);
+        padding: 0.6em 1.4em;
+    }
+
+    &--x-big {
+        font-size: fs(xx-big);
+        padding: 0.6em 1.6em;
+    }
+
+    
 }
