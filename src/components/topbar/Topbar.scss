@@ -70,17 +70,18 @@
     padding: 0;
     color: $color-primary;
     text-transform: none;
+    border: none;
     width: 100%;
     font-size: fs(medium);
     padding: 0 30px;
+
+    &--pressed {
+        background-color: $color-primary;
+        color: $white;
+        border-radius: 0;
+    }
 }
 
-.nav__button--pressed {
-    background-color: $color-primary;
-    color: $white;
-    border-left: $border_thickness solid $color-primary;
-    border-radius: 0;
-}
 
 @media screen and (min-width: $bp-tablet) {
 
@@ -103,6 +104,10 @@
 
     .nav__button {
         font-size: fs(big);
+        
+        &--pressed {
+            border-left: $border_thickness solid $color-primary;
+        }
     }
 
     .nav__ul {

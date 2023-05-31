@@ -5,7 +5,7 @@ button, .btn {
     box-sizing: border-box;
     background-color: $color-primary;
     border-radius: $border_radius_regular;
-    border: none;
+    border: $border_thickness solid $color-primary;
     padding: 0.6em 1.2em;
     font-size: fs(medium); //1 rem, 16px
     font-weight: 700;
