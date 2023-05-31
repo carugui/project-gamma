@@ -16,10 +16,10 @@ const ImageLoopAnimation = () => {
       const documentHeight = document.documentElement.scrollHeight;
 
       // Calcular el porcentaje de desplazamiento
-      const scrollPercentage = (scrollPosition / (documentHeight - windowHeight)) * 100;
+      const scrollPercentage = (scrollPosition / (documentHeight - windowHeight)) * 500;
 
       // Determinar qué imagen mostrar según el porcentaje de desplazamiento
-      const imageIndex = Math.floor(scrollPercentage / 50) % 2;
+      const imageIndex = Math.floor(scrollPercentage / 100) % 2;
       setCurrentImage(imageIndex);
     };
 
