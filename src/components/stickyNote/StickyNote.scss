@@ -7,7 +7,7 @@
     clip-path: polygon(0 0,100% 0,100% calc(100% - 20.00px),calc(100% - 20.00px) 100%,0 100%);
     box-shadow:inset 0px 0px 0px 3px $color-primary;
     border-radius: 6px;
-    
+    padding-bottom: 80px;
 }
 
 .stickyNote:before {
@@ -32,4 +32,12 @@
     border-color: $color-primary;
     border-style: solid;
     border-radius: 6px 0;
+}
+
+@media screen and (min-width: $bp-tablet) {
+
+    .stickyNote {
+        width: 340px;
+        padding-bottom: 100px;
+    }
 }

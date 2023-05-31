@@ -12,9 +12,23 @@ body {
 main {
     padding: 60px;
 }
+
 .section__desktopItems {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
+}
+
+@media screen and (min-width: $bp-desktop) {
+    .section__desktopItems {
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 0;
+        max-height: 100vh;
+        width: 400px;
+    }
 }
