@@ -12,18 +12,41 @@
     border: $border_thickness solid $color-primary;
     border-radius: $border_radius_regular;
 
+    &__left {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     &__item {
         display: flex;
         flex-direction: row;
-        padding: 0 30px;
+
+        &__2 {
+            padding: 0 30px;
+        }
+
+        &__3 {
+            padding: 0 30px;
+        }
     }
 }
 
 .topbar a {
     text-decoration: none;
+    display: block;
 }
 .nav {
     width: 100%;
+
+    & li a{
+        padding: 0.4rem 30px;
+
+        &:hover {
+            background-color: $color-primary;
+            color: white;
+        }
+    }
 }
 .nav__ul {
     display: none;
@@ -34,8 +57,8 @@
     border: $border_thickness solid $color-primary;
     border-radius: $border_radius_regular;
     list-style-type: none;
-    padding: 0.25rem 1rem;
     width: 100vw;
+    padding: 0;
 }
 
 .nav__ul--show {
@@ -47,14 +70,44 @@
     padding: 0;
     color: $color-primary;
     text-transform: none;
-    font-weight: 500;
     width: 100%;
     font-size: fs(medium);
+    padding: 0 30px;
 }
 
 .nav__button--pressed {
     background-color: $color-primary;
     color: $white;
-    border-radius: 0%;
+    border-left: $border_thickness solid $color-primary;
+    border-radius: 0;
 }
 
+@media screen and (min-width: $bp-tablet) {
+
+    .topbar {
+        justify-content: flex-start;
+        font-size: fs(big);
+
+        &__item {
+
+            &__2 {
+                order: -1; 
+            }
+
+            &__3 {
+                margin-left: auto;
+            }
+
+        }
+    }
+
+    .nav__button {
+        font-size: fs(big);
+    }
+
+    .nav__ul {
+        left: auto;
+        width: auto;
+    }
+
+}

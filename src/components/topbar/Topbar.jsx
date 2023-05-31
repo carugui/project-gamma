@@ -28,8 +28,8 @@ function Topbar() {
   return (
     <>
       <header className='topbar'>
-
-        <div className='topbar__item'>
+        
+        <div className='topbar__item topbar__item__1'>
           <nav className='nav' ref={menuRef}>
             <button className={`nav__button ${open ? 'nav__button--pressed' : ''}`}onClick={()=>{setOpen(!open)}}>Menú</button>
             <ul className={`nav__ul ${open ? 'nav__ul--show' : ''}`}>
@@ -46,10 +46,10 @@ function Topbar() {
           </nav>
         </div>
 
-        <Link className='topbar__item'to ="/">Carugui</Link>
-
-        <div className='topbar__item'>Lun 23:12</div>
-
+        <Link className='topbar__item topbar__item__2'to ="/">Carugui</Link>
+        
+        <div className='topbar__item topbar__item__3'>Lun 23:12</div>
+        
       </header>
     </>
   )
