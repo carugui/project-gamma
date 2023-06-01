@@ -12,6 +12,8 @@ import Cards from './components/cards/Cards';
 import Portrait from './components/portrait/Portrait';
 import Artshop from './components/artshop/Artshop';
 import Form from './components/form/Form';
+import image1 from '/../public/imagesSVG/dressyellow.svg';
+import image2 from '/../public/imagesSVG/retrato.svg';
 
 
 

@@ -3,6 +3,7 @@ import Portrait from "../../src/components/portrait/Portrait";
 import Cards from "../../src/components/cards/Cards";
 import Artshop from "../../src/components/artshop/Artshop";
 import Form from "../../src/components/form/Form";
+
 //import Artshop from "../components/artshop/Artshop";
 //import Artshop from "../../src/components/artshop/Artshop.jsx";
 
@@ -19,6 +20,11 @@ export default function Portfolio() {
         <h1>soy el portafolio</h1>
         < Topbar/>
         < Portrait/>
+        
+        
+        
+        
+        
         < Cards />
         < Artshop />
         < Form/>

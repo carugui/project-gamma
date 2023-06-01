@@ -1,43 +1,69 @@
-import './portrait.scss';
+import React, { useState, useEffect } from 'react';
+import './../portrait/portrait.scss';
 
 
-    const Portrait = () => {
-      return (
-        <>
-         <h1>Hola soy tu segundo componente</h1>
-         
-         
 
-        <div className='padre'>
-            <div className='vertical-text'>
-                <h1>Front-end Developer and Visual Artist</h1>
-            </div>
-            
-            <div className='retrato'>
-                <img src="../public/imagesSVG/retrato.svg" alt="Retrato" />
-                <p>
-                 Mi nombre es Andrea Casanova soy apasionada del arte y el diseño, Artista Visual multidisciplinar, tengo más de diez años de trayectoria, muchas exposiciones y algunos premios.
 
-                Mi personalidad es inquieta y me gusta estar en constante aprendizaje, por eso comencé a incursionar por el diseño web y hoy me especializo en desarrollo Front end, diseño UX UI y marketing digital.
 
-                Me encanta poner mis conocimientos al servicio de las necesidades de otros artistas y fotógrafos y ayudarlos a destacar sus obras, no obstante, estoy capacitada para desarrollar cualquier tipo de proyecto web.
 
- 
-            </p>
-            </div>
-            <div className='vestido'>
-                <img src="../public/imagesSVG/dressyellow.svg" alt="otro retrato" />
-            </div>
-        </div>
-        <div>
-            
-        </div>
-        
-        </>
-      );
+
+    const PortraitComponent = () => {
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const [isMobile, setIsMobile] = useState(false);
+    const [showText, setShowText] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
     };
-    
-    export default Portrait;
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    const handleScrollHorizontal = () => {
+      if (scrollPosition > window.innerWidth * 0.6) {
+        setShowText(true);
+      } else {
+        setShowText(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('scroll', handleScrollHorizontal);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScrollHorizontal);
+    };
+  }, []);
+
+  const containerClassName = 'portrait-container';
+  const tituloClassName = 'portrait-title';
+  const foto1ClassName = 'portrait-photo1';
+  const foto2ClassName = 'portrait-photo2';
+  const textContainerClassName = showText ? 'portrait-text-container show' : 'portrait-text-container';
+  const textClassName = 'portrait-text';
+
+  return (
+    <div className={containerClassName}>
+      <div className={tituloClassName}>Título</div>
+      <img className={foto1ClassName} src={'/../../public/imagesSVG/dressyellow.svg'} alt="Foto 1" />
+      <img className={foto2ClassName} src={image2} alt="Foto 2" />
+      <div className={textContainerClassName}>
+        <div className={textClassName}>Texto</div>
+      </div>
+    </div>
+  );
+};
+
+export default PortraitComponent;
+
+import image1 from '../../../public/imagesSVG/dressyellow.svg';
+import image2 from '../../../public/imagesSVG/retrato.svg';
+
     
 
 
