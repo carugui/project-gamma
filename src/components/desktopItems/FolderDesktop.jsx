@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import IconFolder from "../svg/IconFolder";
 import Draggable from 'react-draggable'
 import './DesktopItems.scss'
@@ -8,9 +9,11 @@ function FolderDesktop(props) {
     return (
         <Draggable nodeRef={nodeRef}>
             <div className="desktopItem" ref={nodeRef}>
-            
-                <a href="instagram.com"><IconFolder></IconFolder></a>
-                <a href=""><h1 className="h5">{props.text}</h1></a>
+
+                <Link to={props.goTo} target={props.target ? props.target : '_self'}>
+                    <IconFolder></IconFolder>
+                    <h1 className="h5">{props.text}</h1>
+                </Link>
                 
             </div>
         </Draggable>
