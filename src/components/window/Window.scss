@@ -1,3 +1,31 @@
 @import '../../scss/mixins.scss';
 @import '../../scss/variables.scss';
 @import '../../scss/functions.scss';
+
+.window {
+    background-color: $white-eggshell;
+    border: $border_thickness solid $color-primary;
+    border-radius: $border_radius_regular;
+    position: fixed;
+    z-index: z(absolute);
+
+    & header {
+        border-bottom: $border_thickness solid $color-primary;
+        text-align: center;
+
+        & h2 {
+            margin: 0.25rem 0;
+        }
+    }
+
+    &__content {
+        display: flex;
+        padding: 40px;
+        gap: 60px;
+    }
+
+    &__size-medium {
+        width: 650px;
+        height: 400px;
+    }
+}
