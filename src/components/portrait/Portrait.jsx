@@ -3,31 +3,31 @@ import './../portrait/portrait.scss';
 
 
 
-
-
-
-
     const PortraitComponent = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
     const [isMobile, setIsMobile] = useState(false);
     const [showText, setShowText] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-    };
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        setScrollPosition(window.document.documentElement.scrollLeft);
+      };
+      window.addEventListener('scroll', handleScroll, { passive: true });
 
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    const handleScrollHorizontal = () => {
-      if (scrollPosition > window.innerWidth * 0.6) {
-        setShowText(true);
-      } else {
-        setShowText(false);
+    
+
+    function handleScrollHorizontal() {
+        if (scrollPosition > window.innerWidth * 0.6) {
+          setShowText(true);
+        } else {
+          setShowText(false);
+        }
       }
-    };
 
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
@@ -39,6 +39,8 @@ import './../portrait/portrait.scss';
       window.removeEventListener('scroll', handleScrollHorizontal);
     };
   }, []);
+
+  
 
   const containerClassName = 'portrait-container';
   const tituloClassName = 'portrait-title';

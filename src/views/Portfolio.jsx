@@ -21,11 +21,12 @@ export default function Portfolio() {
         < Topbar/>
         < Portrait/>
         
-        
-        
-        
-        
-        < Cards />
+        < Cards title="hola"
+                image="public\imagesSVG\diseño.svg" 
+                paragraph='soy el parrafo'
+
+        />
+        < Cards text="adios" />
         < Artshop />
         < Form/>
 
