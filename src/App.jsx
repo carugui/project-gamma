@@ -13,6 +13,7 @@ import Home from './views/Home'
 import Contact from './views/Contact'
 import Styleguide from './styleguide/Styleguide'
 import ProjectsList from './views/ProjectsList'
+import ProjectSingle from './views/ProjectSingle'
 import Draggable from 'react-draggable'
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/styleguide" element={<Styleguide />} />
           <Route path="/proyectos" element={<ProjectsList />} />
+          <Route path="/proyectos/:projectId" element={<ProjectSingle />} />
         </Routes>
         
         <section className='section__desktopItems'>

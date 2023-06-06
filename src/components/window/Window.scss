@@ -20,6 +20,7 @@
 
     &__content {
         display: flex;
+        flex-wrap: wrap;
         padding: 40px;
         gap: 60px;
     }
@@ -29,3 +30,22 @@
         height: 400px;
     }
 }
+
+@media screen and (max-width: $bp-desktop) {
+
+    .window {
+        left: 0;
+
+        &__content {
+            justify-content: center;
+        }
+
+        &__size-medium {
+            width: auto;
+            height: auto;
+        }
+    }
+
+}
+
+
