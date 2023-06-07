@@ -42,6 +42,9 @@ function Topbar() {
               <li className='nav__item'>
                 <a href="">Correo</a>
               </li>
+              <li className='nav__item'>
+                <a href="">Redes Sociales</a>
+              </li>
             </ul>
           </nav>
         </div>

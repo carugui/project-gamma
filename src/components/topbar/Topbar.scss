@@ -11,6 +11,7 @@
     width: 100vw;
     border: $border_thickness solid $color-primary;
     border-radius: $border_radius_regular;
+    z-index: 100;
 
     &__left {
         display: flex;
@@ -73,12 +74,22 @@
     border: none;
     width: 100%;
     font-size: fs(medium);
+    font-weight: fw(bold);
     padding: 0 30px;
+
+    &:hover {
+        background-color: transparent;
+    }
 
     &--pressed {
         background-color: $color-primary;
         color: $white;
         border-radius: 0;
+        font-weight: fw(bold);
+
+        &:hover {
+            background-color: $blue_dark_2;
+        }
     }
 }
 
