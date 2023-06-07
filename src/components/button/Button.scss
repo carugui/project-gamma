@@ -6,11 +6,12 @@ button, .btn {
     background-color: $color-primary;
     border-radius: $border_radius_regular;
     border: $border_thickness solid $color-primary;
-    padding: 0.6em 1.2em;
+    padding: 0.3em 1.2em;
     font-size: fs(medium); //1 rem, 16px
     font-weight: 700;
     font-family: $font-primary;
     text-transform: uppercase;
+    text-align: center;
     cursor: pointer;
     color: white;
     text-decoration: none;
@@ -49,17 +50,17 @@ button, .btn {
 
     &--small {
         font-size: fs(small);
-        padding: 0.6em 1.12em;
+        padding: 0.3em 1.12em;
     }
 
     &--big {
         font-size: fs(x-big);
-        padding: 0.6em 1.4em;
+        padding: 0.3em 1.4em;
     }
 
     &--x-big {
         font-size: fs(xx-big);
-        padding: 0.6em 1.6em;
+        padding: 0.3em 1.6em;
     }
 
     

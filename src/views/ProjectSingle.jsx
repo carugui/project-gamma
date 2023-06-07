@@ -20,11 +20,13 @@ export default function ProjectSingle() {
             
             {<Fragment>
 
-                <IconInfo />
-                <p>{listadoSeleccionado.description}</p>
-                <img width="200px" src={listadoSeleccionado.image} alt={listadoSeleccionado.title} />
-                <Button link='true' text='Visitar web'/>
-                <Button text='Volver' type='secondary'/>
+                <div className="content__1"><IconInfo /></div>
+                <p className="content__2">{listadoSeleccionado.description}</p>
+                <img className="content__3" width="200px" src={listadoSeleccionado.image} alt={listadoSeleccionado.title} />
+                <div className="content__4">
+                    <Button link='true' text='Visitar web'/>
+                    <Button text='Volver' type='secondary'/>
+                </div>
 
             </Fragment>}
         

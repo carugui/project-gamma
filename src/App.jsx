@@ -1,11 +1,12 @@
 import { Link, Route, Routes } from 'react-router-dom'
 import { useState } from 'react'
+import React from 'react'
 import Topbar from  './components/topbar/Topbar'
 import FileDesktop from './components/desktopItems/FileDesktop'
 import FolderDesktop from './components/desktopItems/FolderDesktop'
 import MailDesktop from './components/desktopItems/MailDesktop'
 import StickyNote from './components/stickyNote/StickyNote'
-
+import IconFolder from './components/svg/IconFolder'
 
 import './scss/global.scss'
 
@@ -18,6 +19,7 @@ import Draggable from 'react-draggable'
 
 function App() {
   const [count, setCount] = useState(0)
+  const nodeRef = React.useRef(null);
 
   return (
     <>
@@ -44,9 +46,7 @@ function App() {
           <MailDesktop text="Correo" />
           <FolderDesktop text="Redes Sociales"/>
         </section>
-
         <StickyNote text="¡Hola! Soy Carla, bienvenid@ a mi página web. Soy una diseñadora y progamadora web en Valencia" />
-
       </main>
     </>
     

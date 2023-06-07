@@ -35,6 +35,38 @@
 
         &--project-single {
             padding: 40px 1.8rem;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-template-areas:
+            "three one"
+            "three two"
+            "three four";
+            
+
+            & .content__1 {
+                grid-area: one;
+            }
+
+            & .content__2 {
+                grid-area: two;
+            }
+
+            & .content__3 {
+                grid-area: three;
+            }
+
+            & .content__4 {
+                grid-area: four;
+            }
+
+            & svg {
+                margin: auto;
+            }
         }
     }
 
@@ -51,6 +83,17 @@
 
         &__content {
             justify-content: center;
+
+            &--project-single {
+                
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                grid-template-areas:
+                "one"
+                "two"
+                "three"
+                "four";
+            }
         }
 
         &__size-medium {
@@ -59,6 +102,12 @@
         }
     }
 
+}
+
+@media only screen and (min-width: 600px) {
+    .container{
+        
+    }
 }
 
 

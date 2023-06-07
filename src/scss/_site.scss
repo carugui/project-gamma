@@ -13,12 +13,19 @@ main {
     padding: 60px;
 }
 
+img {
+    border: $border_thickness solid $color-primary;
+    border-radius: $border_radius_regular;
+}
+
 .section__desktopItems {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
 }
+
+
 
 @media screen and (min-width: $bp-desktop) {
     .section__desktopItems {
