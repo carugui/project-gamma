@@ -15,7 +15,7 @@ function Window(props) {
                     <h2 className='h5'>{props.title}</h2>
                 </header>
 
-                <div className='window__content'>
+                <div className={`window__content ${props.type === '' ? '' : `window__content--${props.type}`}`}>
                     {props.content}
                 </div>
                 

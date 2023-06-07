@@ -32,6 +32,10 @@
         flex-wrap: wrap;
         padding: 40px;
         gap: 60px;
+
+        &--project-single {
+            padding: 40px 1.8rem;
+        }
     }
 
     &__size-medium {

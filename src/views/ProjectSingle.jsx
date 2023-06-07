@@ -2,6 +2,8 @@ import { Fragment } from "react";
 import { Link, useParams } from "react-router-dom"
 import { PROJECTS } from "../../public/projects";
 import Window from "../components/window/Window";
+import IconInfo from "../components/svg/IconInfo";
+import Button from "../components/button/Button";
 
 export default function ProjectSingle() {
     const params = useParams();
@@ -12,23 +14,17 @@ export default function ProjectSingle() {
     return <>
 
 
-        <Window title={listadoSeleccionado.title} content =
+        <Window title={listadoSeleccionado.title} type='project-single' content =
     
             
             
             {<Fragment>
 
+                <IconInfo />
+                <p>{listadoSeleccionado.description}</p>
                 <img width="200px" src={listadoSeleccionado.image} alt={listadoSeleccionado.title} />
-
-                { listadoSeleccionado.links.map(link => 
-                            
-                            <a href={link.url}>
-                                <img src={link.img}></img>
-                            </a>
-                        
-                )}
-                
-                <h1>Hola</h1>
+                <Button link='true' text='Visitar web'/>
+                <Button text='Volver' type='secondary'/>
 
             </Fragment>}
         

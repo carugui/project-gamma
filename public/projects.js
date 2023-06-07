@@ -2,6 +2,7 @@ export const PROJECTS = [
     {
         "id": "todo-app",
         "title": "Todo App",
+        "description": "Lorem ipsum es estem rosare",
         "technologies": ["React", "Vite", "LocalStorage"],
         "image": "https://todoist.com/static/home/features/clear-your-mind-1008.jpg",
         "links": [
@@ -22,6 +23,7 @@ export const PROJECTS = [
     {
         "id": "pokedex",
         "title": "Pokedex",
+        "description": "Lorem ipsum es estem rosare",
         "technologies": ["JS", "CSS", "Fetch"],
         "image": "https://www.mundodeportivo.com/alfabeta/hero/2019/09/pokemon-pokedex-pikachu.jpg?width=1200",
         "links": [
@@ -37,6 +39,7 @@ export const PROJECTS = [
     {
         "id": "chat",
         "title": "Chat app",
+        "description": "Lorem ipsum es estem rosare",
         "image": "https://png.pngtree.com/png-vector/20190927/ourlarge/pngtree-chat-icon-png-image_1757855.jpg",
         "links": [
             {
