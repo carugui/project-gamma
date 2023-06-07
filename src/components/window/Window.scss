@@ -12,9 +12,18 @@
     & header {
         border-bottom: $border_thickness solid $color-primary;
         text-align: center;
+        display: flex;
+        align-items: center;
+
+        & .iconcross {
+            position: fixed;
+            margin: 0 0.5rem;
+        }
 
         & h2 {
             margin: 0.25rem 0;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 

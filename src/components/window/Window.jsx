@@ -2,6 +2,7 @@ import './Window.scss';
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Draggable from 'react-draggable'
+import IconCross from '../svg/IconCross';
 
 function Window(props) {
     const nodeRef = React.useRef(null);
@@ -10,6 +11,7 @@ function Window(props) {
             <div className={`window ${props.size === '' ? '' : `window__size-${props.size}`}`} ref={nodeRef}>
 
                 <header>
+                    <IconCross className="iconcross" goTo="/"/>
                     <h2 className='h5'>{props.title}</h2>
                 </header>
 
