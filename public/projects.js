@@ -4,7 +4,7 @@ export const PROJECTS = [
         "title": "Vinilísimo",
         "description": "Vinilísimo es una tienda online en la que puedes personalizar tu vinilo de música a tu gusto.",
         "technologies": ["React", "Vite", "LocalStorage"],
-        "image": "https://todoist.com/static/home/features/clear-your-mind-1008.jpg",
+        "image": "/img/vinilisimo.png",
         "links": [
             {
                 "url": "https://github.com/jroji",

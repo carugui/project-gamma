@@ -38,6 +38,7 @@
             flex-wrap: nowrap;
             flex-direction: column;
             justify-content: center;
+            align-items: flex-end;
             gap: 15px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -46,6 +47,7 @@
             "three one"
             "three two"
             "three four";
+            max-width: 800px;
             
 
             & .content__1 {
@@ -68,6 +70,10 @@
 
             & svg {
                 margin: auto;
+            }
+
+            & img {
+                width: 100%;
             }
         }
     }
