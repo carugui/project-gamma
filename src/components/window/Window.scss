@@ -50,6 +50,8 @@
 
             & .content__1 {
                 grid-area: one;
+                display: flex;
+                align-items: center;
             }
 
             & .content__2 {

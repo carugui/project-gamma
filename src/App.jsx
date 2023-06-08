@@ -41,8 +41,8 @@ function App() {
         </Routes>
         
         <section className='section__desktopItems'>
-          <FolderDesktop text="Proyectos"/>
-          <FileDesktop text="Sobre mí" goTo='/proyectos'/>
+          <FolderDesktop text="Proyectos" goTo='/proyectos'/>
+          <FileDesktop text="Sobre mí" />
           <MailDesktop text="Correo" />
           <FolderDesktop text="Redes Sociales"/>
         </section>

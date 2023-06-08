@@ -1,8 +1,8 @@
 export const PROJECTS = [
     {
-        "id": "todo-app",
-        "title": "Todo App",
-        "description": "Lorem ipsum es estem rosare, lorem ipsum es estem rosare lorem ipsum es estem rosare",
+        "id": "vinilisimo",
+        "title": "Vinilísimo",
+        "description": "Vinilísimo es una tienda online en la que puedes personalizar tu vinilo de música a tu gusto.",
         "technologies": ["React", "Vite", "LocalStorage"],
         "image": "https://todoist.com/static/home/features/clear-your-mind-1008.jpg",
         "links": [

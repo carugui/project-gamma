@@ -7,16 +7,16 @@ import './DesktopItems.scss'
 function WebDesktop(props) {
     const nodeRef = React.useRef(null);
     return (
-        <Draggable nodeRef={nodeRef}>
-            <div className='desktopItem' ref={nodeRef}>
+        
+        <div className='desktopItem' ref={nodeRef}>
 
-                <Link to={props.goTo} target={props.target ? props.target : '_self'}>
-                    <IconWeb></IconWeb>
-                    <h1 className="h5">{props.text}</h1>
-                </Link>
-                
-            </div>
-        </Draggable>
+            <Link to={props.goTo} target={props.target ? props.target : '_self'}>
+                <IconWeb></IconWeb>
+                <h1 className="h5">{props.text}</h1>
+            </Link>
+            
+        </div>
+        
 
     )
 }
