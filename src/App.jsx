@@ -25,11 +25,11 @@ function App() {
     <>
       <Topbar />
       
-      <header>
+      {/* <header>
         <Link to ="/contact">Contacto</Link>
         <Link to ="/">Home</Link>
         <Link to ="/styleguide">Styleguide</Link>
-      </header>
+      </header> */}
 
       <main>
         <Routes>

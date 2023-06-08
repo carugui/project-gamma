@@ -12,6 +12,7 @@
     border: $border_thickness solid $color-primary;
     border-radius: $border_radius_regular;
     z-index: 100;
+    font-size: fs(big);
 
     &__left {
         display: flex;
@@ -73,7 +74,7 @@
     text-transform: none;
     border: none;
     width: 100%;
-    font-size: fs(medium);
+    font-size: fs(big);
     font-weight: fw(bold);
     padding: 0 30px;
 
