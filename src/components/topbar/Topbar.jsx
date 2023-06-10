@@ -2,8 +2,9 @@ import './Topbar.scss';
 import { Link, Route, Routes } from 'react-router-dom'
 import Home from '../../views/Home'
 import React, { useEffect, useState, useRef } from "react";
+import SocialMediaList from '../../views/SocialMediaList';
 
-function Topbar() {
+function Topbar(props) {
 
   const [open, setOpen] = useState(false);
 
@@ -25,6 +26,24 @@ function Topbar() {
     }
 
   });
+
+  const handleRefresh = () => {
+    window.location.reload();
+  };
+
+  const handleCloseMenu = () => {
+    setOpen(false);
+  };
+
+  const [isWindowVisible, setWindowVisible] = useState(false);
+
+  const handleClick = () => {
+    setWindowVisible(true);
+  };
+
+  const handleClose = () => {
+    setWindowVisible(false);
+  };
   return (
     <>
       <header className='topbar'>
@@ -33,8 +52,8 @@ function Topbar() {
           <nav className='nav' ref={menuRef}>
             <button className={`nav__button ${open ? 'nav__button--pressed' : ''}`}onClick={()=>{setOpen(!open)}}>Menú</button>
             <ul className={`nav__ul ${open ? 'nav__ul--show' : ''}`}>
-              <li className='nav__item'>
-                <a href="" >Proyectos</a>
+              <li className='nav__item' >
+                <Link to="/proyectos" onClick={handleCloseMenu}>Proyectos</Link>
               </li>
               <li className='nav__item'>
                 <a href="" >Sobre mí</a>
@@ -43,13 +62,13 @@ function Topbar() {
                 <a href="">Correo</a>
               </li>
               <li className='nav__item'>
-                <a href="">Redes Sociales</a>
+                <a onClick={() => { handleCloseMenu(); props.rrss(); }}>Redes Sociales</a>
               </li>
             </ul>
           </nav>
         </div>
 
-        <Link className='topbar__item topbar__item__2'to ="/">Carugui</Link>
+        <Link className='topbar__item topbar__item__2' to="/" onClick="{handleRefresh}">Carugui</Link>
         
         <div className='topbar__item topbar__item__3'>Lun 23:12</div>
         
