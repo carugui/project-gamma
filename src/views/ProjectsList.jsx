@@ -9,7 +9,7 @@ export default function ProjectsList() {
 
     return <>
 
-        <Window title='Proyectos' size="medium" content =
+        <Window title='Proyectos' size="medium" goTo="/" content =
         
             {listado.map(proyecto =>
 

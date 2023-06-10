@@ -9,8 +9,8 @@ function GithubDesktop(props) {
         <Draggable nodeRef={nodeRef}>
             <div className="desktopItem" ref={nodeRef}>
             
-                <a href="instagram.com"><IconGithub></IconGithub></a>
-                <a href=""><h1 className="h5">Github</h1></a>
+                <a href="https://github.com/carugui"><IconGithub></IconGithub></a>
+                <a href="https://github.com/carugui"><h1 className="h5">Mi GitHub</h1></a>
                 
             </div>
         </Draggable>

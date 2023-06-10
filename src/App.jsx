@@ -1,14 +1,19 @@
 import { Link, Route, Routes } from 'react-router-dom'
-import { useState } from 'react'
-import React from 'react'
+import { Fragment } from "react";
+import React, { useState } from 'react';
+
+import './scss/global.scss'
+
 import Topbar from  './components/topbar/Topbar'
 import FileDesktop from './components/desktopItems/FileDesktop'
 import FolderDesktop from './components/desktopItems/FolderDesktop'
 import MailDesktop from './components/desktopItems/MailDesktop'
+import GithubDesktop from './components/desktopItems/GithubDesktop'
 import StickyNote from './components/stickyNote/StickyNote'
 import IconFolder from './components/svg/IconFolder'
-
-import './scss/global.scss'
+import Cloud from './components/svg/Cloud'
+import Window from './components/window/Window'
+import SocialMediaList from './views/SocialMediaList';
 
 import Home from './views/Home'
 import Contact from './views/Contact'
@@ -19,7 +24,17 @@ import Draggable from 'react-draggable'
 
 function App() {
   const [count, setCount] = useState(0)
-  const nodeRef = React.useRef(null);
+  const divRef = React.useRef(null);
+
+  const [isWindowVisible, setWindowVisible] = useState(false);
+
+  const handleClick = () => {
+    setWindowVisible(true);
+  };
+
+  const handleClose = () => {
+    setWindowVisible(false);
+  };
 
   return (
     <>
@@ -44,9 +59,12 @@ function App() {
           <FolderDesktop text="Proyectos" goTo='/proyectos'/>
           <FileDesktop text="Sobre mí" />
           <MailDesktop text="Correo" />
-          <FolderDesktop text="Redes Sociales"/>
+          <FolderDesktop text="Redes Sociales" clickTo={handleClick}/>
         </section>
         <StickyNote text="¡Hola! Soy Carla, bienvenid@ a mi página web. Soy una diseñadora y progamadora web en Valencia" />
+        <Cloud />
+        
+        {isWindowVisible && <SocialMediaList onClose={handleClose} />}
       </main>
     </>
     

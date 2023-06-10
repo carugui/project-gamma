@@ -4,9 +4,14 @@
 
 body {
     margin: 0;
-    background-color: $blue_light_1;
+    background-color: $blue_light_2;
     font-family: $font-primary;
     color: $color-primary;
+    background-image: url("../../public/img/background-carugui-web.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: top;
+    overflow-x: hidden;
 }
 
 main {
@@ -38,4 +43,53 @@ img {
         max-height: 100vh;
         //width: 400px;  aplicar cuando haya más de 4 iconos
     }
+}
+
+@-webkit-keyframes animateCloud {
+    0% {
+        margin-left: -500px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@-moz-keyframes animateCloud {
+    0% {
+        margin-left: -500px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes animateCloud {
+    0% {
+        margin-left: -500px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+/* ANIMATIONS */
+
+.cloud {
+	-webkit-animation: animateCloud 35s linear infinite;
+	-moz-animation: animateCloud 35s linear infinite;
+	animation: animateCloud 35s linear infinite;
+
+    z-index: -1;
+    position: absolute;
+    top: 90px;
+}
+
+.background-wrap {
+    bottom: 0;
+	left: 0;
+	padding-top: 50px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }

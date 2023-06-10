@@ -11,7 +11,7 @@ function Window(props) {
             <div className={`window ${props.size === '' ? '' : `window__size-${props.size}`}`} ref={nodeRef}>
 
                 <header>
-                    <IconCross className="iconcross" goTo="/"/>
+                    <IconCross className="iconcross" goTo={props.goTo} clickTo={props.clickTo}/>
                     <h2 className='h5'>{props.title}</h2>
                 </header>
 
