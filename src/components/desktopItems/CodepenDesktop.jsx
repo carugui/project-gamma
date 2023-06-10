@@ -1,16 +1,16 @@
 import React from 'react'
-import IconGithub from "../svg/IconGithub";
+import IconCodepen from "../svg/IconCodepen";
 import Draggable from 'react-draggable'
 import './DesktopItems.scss'
 
-function GithubDesktop(props) {
+function CodepenDesktop(props) {
     const nodeRef = React.useRef(null);
     return (
         <Draggable nodeRef={nodeRef}>
             <div className="desktopItem" ref={nodeRef}>
             
-                <a href="https://github.com/carugui" target="_blank"><IconGithub></IconGithub></a>
-                <a href="https://github.com/carugui" target="_blank"><h1 className="h5">Mi GitHub</h1></a>
+                <a href="https://codepen.io/carugui" target="_blank"><IconCodepen></IconCodepen></a>
+                <a href="https://codepen.io/carugui" target="_blank"><h1 className="h5">CodePen</h1></a>
                 
             </div>
         </Draggable>
@@ -18,4 +18,4 @@ function GithubDesktop(props) {
     )
 }
 
-export default GithubDesktop;
+export default CodepenDesktop;
