@@ -9,8 +9,8 @@ function MailDesktop(props) {
         <Draggable nodeRef={nodeRef}>
             <div className="desktopItem" ref={nodeRef}>
             
-                <a href="instagram.com"><IconMail></IconMail></a>
-                <a href=""><h1 className="h5">{props.text}</h1></a>
+                <a href="mailto:soy.carugui@gmail.com"><IconMail></IconMail></a>
+                <a href="mailto:soy.carugui@gmail.com"><h1 className="h5">{props.text}</h1></a>
                 
             </div>
         </Draggable>

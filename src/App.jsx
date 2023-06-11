@@ -14,31 +14,49 @@ import IconFolder from './components/svg/IconFolder'
 import Cloud from './components/svg/Cloud'
 import Window from './components/window/Window'
 import SocialMediaList from './views/SocialMediaList';
+import IconPortrait from './components/svg/IconPortrait'
 
 import Home from './views/Home'
 import Contact from './views/Contact'
 import Styleguide from './styleguide/Styleguide'
 import ProjectsList from './views/ProjectsList'
 import ProjectSingle from './views/ProjectSingle'
+import About from './views/About';
 import Draggable from 'react-draggable'
 
 function App() {
   const [count, setCount] = useState(0)
   const divRef = React.useRef(null);
 
-  const [isWindowVisible, setWindowVisible] = useState(false);
 
-  const handleClick = () => {
-    setWindowVisible(true);
+  /* FUNCIONAMIENTO VENTANA REDES SOCIALES */
+
+  const [isSocialsWindowVisible, setSocialsWindowVisible] = useState(false);
+
+  const socialsOpen = () => {
+    setSocialsWindowVisible(true);
   };
 
-  const handleClose = () => {
-    setWindowVisible(false);
+  const socialsClose = () => {
+    setSocialsWindowVisible(false);
+  };
+
+
+  /* FUNCIONAMIENTO VENTANA SOBRE MÍ */
+
+  const [isAboutWindowVisible, setAboutWindowVisible] = useState(false);
+
+  const aboutOpen = () => {
+    setAboutWindowVisible(true);
+  };
+
+  const aboutClose = () => {
+    setAboutWindowVisible(false);
   };
 
   return (
     <>
-      <Topbar rrss={handleClick}/>
+      <Topbar socials={socialsOpen} about={aboutOpen}/>
       
       {/* <header>
         <Link to ="/contact">Contacto</Link>
@@ -57,14 +75,16 @@ function App() {
         
         <section className='section__desktopItems'>
           <FolderDesktop text="Proyectos" goTo='/proyectos'/>
-          <FileDesktop text="Sobre mí" />
+          <FileDesktop text="Sobre mí" clickTo={aboutOpen}/>
           <MailDesktop text="Correo" />
-          <FolderDesktop text="Redes Sociales" clickTo={handleClick}/>
+          <FolderDesktop text="Redes Sociales" clickTo={socialsOpen}/>
         </section>
         <StickyNote text="¡Hola! Soy Carla, bienvenid@ a mi página web. Soy una diseñadora y progamadora web en Valencia" />
         <Cloud />
         
-        {isWindowVisible && <SocialMediaList onClose={handleClose} />}
+        {isSocialsWindowVisible && <SocialMediaList onClose={socialsClose} />}
+        {isAboutWindowVisible && <About onClose={aboutClose} />}
+        
       </main>
     </>
     

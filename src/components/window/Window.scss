@@ -9,7 +9,7 @@
     position: fixed;
     z-index: z(absolute);
 
-    & header {
+    & > header {
         border-bottom: $border_thickness solid $color-primary;
         text-align: center;
         display: flex;
@@ -32,6 +32,43 @@
         flex-wrap: wrap;
         padding: 40px;
         gap: 60px;
+        
+
+        &--about {
+            height: 200px;
+            overflow-y: scroll;
+            height: 360px;
+
+            & .about-page {
+                background-color: $blue_light_1;
+                border-radius: $border_radius_regular;
+                max-width: 450px;
+                height: 600px;
+                padding: 45px;
+                margin: auto;
+
+                & hr.rounded {
+                    border-top: $border_thickness solid $color-primary;
+                    border-radius: 15px;
+                }
+    
+                &__header {
+                    display: flex;
+                    gap: 10px;
+                    padding-bottom: 0.6rem;
+    
+                    & h2{
+                        margin: 0;
+                        
+                    }
+
+                    & h3 {
+                        margin: 0;
+                        text-align: right;
+                    }
+                }
+            }
+        }
 
         &--project-single {
             padding: 40px 1.8rem;

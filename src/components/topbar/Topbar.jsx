@@ -56,13 +56,13 @@ function Topbar(props) {
                 <Link to="/proyectos" onClick={handleCloseMenu}>Proyectos</Link>
               </li>
               <li className='nav__item'>
-                <a href="" >Sobre mí</a>
+                <a onClick={() => { handleCloseMenu(); props.about(); }} >Sobre mí</a>
               </li>
               <li className='nav__item'>
                 <a href="">Correo</a>
               </li>
               <li className='nav__item'>
-                <a onClick={() => { handleCloseMenu(); props.rrss(); }}>Redes Sociales</a>
+                <a onClick={() => { handleCloseMenu(); props.socials(); }}>Redes Sociales</a>
               </li>
             </ul>
           </nav>
