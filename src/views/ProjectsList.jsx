@@ -48,11 +48,19 @@ export default function ProjectsList() {
                 {<Fragment>
 
                     <div className="content__1"><IconInfo /></div>
-                    <p className="content__2">{selectedProject.description}</p>
-                    <img className="content__3" src={selectedProject.image} alt={selectedProject.title} />
+                    <div className='content__2'>
+                        <p className="fs-big">{selectedProject.description}</p>
+                        <p className="fs-big">Visita la página web <a href={selectedProject.website} target='_blank'>aquí</a></p>
+                    </div>
+                    
+                    <a className="content__3" href={selectedProject.website} target='_blank'><img  src={selectedProject.image} alt={selectedProject.title} /></a>
                     <div className="content__4">
-                        <Button link='true' text='Visitar web'/>
+                        <Button link='true' target='_blank' text='Guía de estilos'/>
+                        <Button link='true' target='_blank' text='Figma' goTo={selectedProject.figma}/>
+                    </div>
+                    <div className="content__5">
                         <Button text='Volver' type='secondary' handleClick={projectSingleClose}/>
+                        
                     </div>
 
                 </Fragment>}

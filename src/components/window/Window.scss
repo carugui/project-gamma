@@ -83,7 +83,8 @@
             grid-template-areas:
             "three one"
             "three two"
-            "three four";
+            "three two"
+            "five four";
             max-width: 800px;
             
 
@@ -95,14 +96,30 @@
 
             & .content__2 {
                 grid-area: two;
+
+                & p {
+                    margin-bottom: 0;
+                }
             }
 
             & .content__3 {
                 grid-area: three;
+                
             }
 
             & .content__4 {
                 grid-area: four;
+                display: flex;
+                gap: 15px;
+            }
+
+            & .content__5 {
+                grid-area: five;
+                display: flex;
+
+                & button {
+                    flex-grow: 1;
+                }
             }
 
             & svg {
@@ -137,7 +154,8 @@
                 "one"
                 "two"
                 "three"
-                "four";
+                "four"
+                "five";
             }
         }
 

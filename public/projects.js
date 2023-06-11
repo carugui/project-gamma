@@ -5,6 +5,9 @@ export const PROJECTS = [
         "description": "Vinilísimo es una tienda online en la que puedes personalizar tu vinilo de música a tu gusto.",
         "technologies": ["React", "Vite", "LocalStorage"],
         "image": "/img/vinilisimo.png",
+        "styleguide": "",
+        "figma": "https://www.figma.com/file/VJjXMni2zXvqCcB0Rot1b2/Carla-Cardona---ProjectBeta?type=design&node-id=259%3A146&t=SiVgJ7NRf192ALl1-1",
+        "website": "https://esatdev.com/2022/carla/projectbeta/",
         "links": [
             {
                 "url": "https://github.com/jroji",
