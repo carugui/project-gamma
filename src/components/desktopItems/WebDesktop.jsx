@@ -10,7 +10,7 @@ function WebDesktop(props) {
         
         <div className='desktopItem' ref={nodeRef}>
 
-            <Link to={props.goTo} target={props.target ? props.target : '_self'}>
+            <Link to={props.goTo} onClick={props.clickTo} target={props.target ? props.target : '_self'}>
                 <IconWeb></IconWeb>
                 <h1 className="h5">{props.text}</h1>
             </Link>

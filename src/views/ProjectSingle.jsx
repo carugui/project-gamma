@@ -5,7 +5,7 @@ import Window from "../components/window/Window";
 import IconInfo from "../components/svg/IconInfo";
 import Button from "../components/button/Button";
 
-export default function ProjectSingle() {
+export default function ProjectSingle({ onClose }) {
     const params = useParams();
     const listado = PROJECTS;
 
@@ -14,7 +14,7 @@ export default function ProjectSingle() {
     return <>
 
 
-        <Window title={listadoSeleccionado.title} type='project-single' content =
+        <Window title={listadoSeleccionado.title} type='project-single' clickTo={onClose} content =
     
             
             
