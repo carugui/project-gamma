@@ -70,7 +70,7 @@ function Topbar(props) {
 
         <Link className='topbar__item topbar__item__2' to="/" onClick="{handleRefresh}">Carugui</Link>
         
-        <div className='topbar__item topbar__item__3'>Lun 23:12</div>
+        <div className='topbar__item topbar__item__3'>Lun 16:22</div>
         
       </header>
     </>
