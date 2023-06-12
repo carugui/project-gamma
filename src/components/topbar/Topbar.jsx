@@ -3,6 +3,7 @@ import { Link, Route, Routes } from 'react-router-dom'
 import Home from '../../views/Home'
 import React, { useEffect, useState, useRef } from "react";
 import SocialMediaList from '../../views/SocialMediaList';
+import Clock from '../clock/Clock';
 
 function Topbar(props) {
 
@@ -70,7 +71,7 @@ function Topbar(props) {
 
         <Link className='topbar__item topbar__item__2' to="/" onClick="{handleRefresh}">Carugui</Link>
         
-        <div className='topbar__item topbar__item__3'>Lun 16:22</div>
+        <Clock />
         
       </header>
     </>
