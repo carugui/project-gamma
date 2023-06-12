@@ -55,7 +55,7 @@ export default function ProjectsList() {
                     
                     <a className="content__3" href={selectedProject.website} target='_blank'><img  src={selectedProject.image} alt={selectedProject.title} /></a>
                     <div className="content__4">
-                        <Button link='true' target='_blank' text='Guía de estilos'/>
+                        <Button link='true' target='_blank' text='Guía de estilos' goTo={selectedProject.styleguide}/>
                         <Button link='true' target='_blank' text='Figma' goTo={selectedProject.figma}/>
                     </div>
                     <div className="content__5">
