@@ -11,6 +11,7 @@
     width: 100vw;
     border: $border_thickness solid $color-primary;
     border-radius: $border_radius_regular;
+    position: absolute;
     z-index: 100;
     font-size: fs(big);
 
@@ -25,11 +26,11 @@
         flex-direction: row;
 
         &__2 {
-            padding: 0 30px;
+            padding: 0 20px;
         }
 
         &__3 {
-            padding: 0 30px;
+            padding-right: 30px;
         }
     }
 }
@@ -54,7 +55,7 @@
 .nav__ul {
     display: none;
     position: absolute;
-    left: 0;
+    left: calc($border_thickness * (-1));
     margin: 0;
     background-color: $blue_light_2;
     border: $border_thickness solid $color-primary;
@@ -110,6 +111,7 @@
 
             &__3 {
                 margin-left: auto;
+                padding: 0 30px;
             }
 
         }

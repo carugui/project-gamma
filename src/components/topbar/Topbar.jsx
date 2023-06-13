@@ -60,7 +60,7 @@ function Topbar(props) {
                 <a onClick={() => { handleCloseMenu(); props.about(); }} >Sobre mí</a>
               </li>
               <li className='nav__item'>
-                <a href="">Correo</a>
+                <a href="mailto:soy.carugui@gmail.com">Correo</a>
               </li>
               <li className='nav__item'>
                 <a onClick={() => { handleCloseMenu(); props.socials(); }}>Redes Sociales</a>
