@@ -16,7 +16,7 @@ function Clock() {
 
     return (
         <>
-          <div className='topbar__item topbar__item__3'>{currentTime}</div>
+            <div className='topbar__item topbar__item__3'>{currentTime}</div>
         </>
     )
 }
