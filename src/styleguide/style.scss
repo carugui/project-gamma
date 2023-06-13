@@ -1,11 +1,10 @@
-.svg--small {
-    width: 32px;
-    height: 32px;
-}
+@import '../scss/mixins.scss';
+@import '../scss/variables.scss';
+@import '../scss/functions.scss';
 
-.svg--big {
-    width: 64px;
-    height: 64px;
+.main__styleguide {
+    width: 100vw;
+    background-color: $blue_light_1;
 }
 
 .section {

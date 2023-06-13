@@ -32,24 +32,28 @@ export default function Styleguide ( ) {
             <h2 className="section__header">Botones</h2>
 
             <div>
+                <code>size='x-big'</code>
                 <Button text='Primario' size='x-big'/>
                 <Button text='Secundario' type='secondary' size='x-big'/>
                 <Button text='Desabilitado' status='disabled' size='x-big'/>
             </div>
 
             <div>
+                <code className='code__button'>size='big'</code>
                 <Button text='Primario' size='big'/>
                 <Button text='Secundario' type='secondary' size='big'/>
                 <Button text='Desabilitado' status='disabled' size='big'/>
             </div>
 
             <div>
+                <code>size=''</code>
                 <Button text='Primario'/>
                 <Button text='Secundario' type='secondary'/>
                 <Button text='Desabilitado' status='disabled'/>
             </div>
 
             <div>
+                <code>size='small'</code>
                 <Button text='Primario' size='small'/>
                 <Button text='Secundario' type='secondary' size='small'/>
                 <Button text='Desabilitado' status='disabled' size='small'/>

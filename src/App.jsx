@@ -1,4 +1,5 @@
-import { Link, Route, Routes } from 'react-router-dom'
+import { Link, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, useLocation } from 'react-router-dom';
 import { Fragment } from "react";
 import React, { useState } from 'react';
 
@@ -28,6 +29,13 @@ function App() {
   const [count, setCount] = useState(0)
   const divRef = React.useRef(null);
 
+  const location = useLocation();
+  const hideComponentsViews = ['/styleguide']; // Specify the views where the navigation should be hidden
+
+  const isComponentsVisible = !hideComponentsViews.includes(location.pathname);
+
+  const mainClassName = isComponentsVisible ? 'main' : 'main main__styleguide';
+
 
   /* FUNCIONAMIENTO VENTANA REDES SOCIALES */
 
@@ -56,7 +64,11 @@ function App() {
 
   return (
     <>
-      <Topbar socials={socialsOpen} about={aboutOpen}/>
+      {isComponentsVisible && 
+
+        <Topbar socials={socialsOpen} about={aboutOpen}/>
+
+      }
       
       {/* <header>
         <Link to ="/contact">Contacto</Link>
@@ -64,7 +76,7 @@ function App() {
         <Link to ="/styleguide">Styleguide</Link>
       </header> */}
 
-      <main>
+      <main className={mainClassName}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
@@ -73,14 +85,20 @@ function App() {
           <Route path="/proyectos/:projectId" element={<ProjectSingle />} />
         </Routes>
         
-        <section className='section__desktopItems'>
-          <FolderDesktop text="Proyectos" goTo='/proyectos'/>
-          <FileDesktop text="Sobre mí" clickTo={aboutOpen}/>
-          <MailDesktop text="Correo" />
-          <FolderDesktop text="Redes Sociales" clickTo={socialsOpen}/>
-        </section>
-        <StickyNote text="¡Hola! Soy Carla, bienvenid@ a mi página web. Soy una diseñadora y progamadora web en Valencia" />
-        <Cloud />
+        {isComponentsVisible && 
+
+          <div className='main__content'>
+            <section className='section__desktopItems'>
+              <FolderDesktop text="Proyectos" goTo='/proyectos'/>
+              <FileDesktop text="Sobre mí" clickTo={aboutOpen}/>
+              <MailDesktop text="Correo" />
+              <FolderDesktop text="Redes Sociales" clickTo={socialsOpen}/>
+            </section>
+            <StickyNote text="¡Hola! Soy Carla, bienvenid@ a mi página web. Soy una diseñadora y progamadora web en Valencia" />
+            <Cloud />
+          </div>
+
+        }
         
         {isSocialsWindowVisible && <SocialMediaList onClose={socialsClose} />}
         {isAboutWindowVisible && <About onClose={aboutClose} />}
