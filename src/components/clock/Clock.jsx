@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 function Clock() {
 
     const [currentTime, setCurrentTime] = useState('');
-    const dayWeek = ["Dom","Lun","Mar","Miérc","Juev","Vier","Sáb"];
+    const dayWeek = ["Dom","Lun","Mar","Mié","Juev","Vier","Sáb"];
 
     useEffect(() => {
         const day = dayWeek[new Date().getDay()];
