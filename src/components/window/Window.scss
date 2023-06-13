@@ -8,6 +8,7 @@
     border-radius: $border_radius_regular;
     position: fixed;
     z-index: z(absolute);
+    
 
     & > header {
         border-bottom: $border_thickness solid $color-primary;

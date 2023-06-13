@@ -6,7 +6,7 @@ function StickyNote(props) {
     const nodeRef = React.useRef(null);
     return (
         <Draggable nodeRef={nodeRef}>
-            <div className="stickyNote" ref={nodeRef}>
+            <div className={`${props.optionalClasses} stickyNote `} ref={nodeRef}>
             
                 <p>{props.text}</p>
                 
