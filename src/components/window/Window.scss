@@ -136,6 +136,25 @@
         width: 650px;
         height: 400px;
     }
+
+    &__position {
+    
+        &--center {
+            left: 20vw;
+            top: 25vh;
+        }
+
+        &--bottom-left {
+            left: 15vw;
+            bottom: 10vh;
+        }
+
+        &--top-right {
+            right: 10vw;
+            top: 10vw;
+        }
+
+    }
 }
 
 @media screen and (max-width: $bp-desktop) {

@@ -10,7 +10,7 @@ export default function SocialMediaList({ onClose }) {
 
     return <>
 
-        <Window title="Redes Sociales" size="medium" clickTo={onClose} content=
+        <Window title="Redes Sociales" size="medium" clickTo={onClose} position='top-right' content=
             {<Fragment>
                 <GithubDesktop />
                 <InstagramDesktop />

@@ -8,7 +8,7 @@ function Window(props) {
     const nodeRef = React.useRef(null);
     return (
         <Draggable nodeRef={nodeRef}>
-            <div className={`window ${props.size === '' ? '' : `window__size-${props.size}`}`} ref={nodeRef}>
+            <div className={`window ${props.size === '' ? '' : `window__size-${props.size}`} ${props.position === '' ? '' : `window__position--${props.position}`}`} ref={nodeRef}>
 
                 <header>
                     <IconCross className="iconcross" goTo={props.goTo} clickTo={props.clickTo}/>

@@ -11,7 +11,7 @@ export default function About({ onClose }) {
 
     return <>
 
-        <Window title="Sobre mí" size="medium" type='about' clickTo={onClose} content=
+        <Window title="Sobre mí" size="medium" type='about' position='bottom-left' clickTo={onClose} content=
             {
                 <div className='about-page'>
                     <header className='about-page__header'>

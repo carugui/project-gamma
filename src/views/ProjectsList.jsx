@@ -43,7 +43,7 @@ export default function ProjectsList() {
         
         />
         {selectedProject && 
-            <Window title={selectedProject.title} type='project-single' clickTo={projectSingleClose} content =
+            <Window title={selectedProject.title} type='project-single' position='center' clickTo={projectSingleClose} content =
                 
                 {<Fragment>
 
