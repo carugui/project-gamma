@@ -6,14 +6,14 @@ import './DesktopItems.scss'
 function CodepenDesktop(props) {
     const nodeRef = React.useRef(null);
     return (
-        <Draggable nodeRef={nodeRef}>
-            <div className="desktopItem" ref={nodeRef}>
+        
+        <div className="desktopItem" ref={nodeRef}>
+        
+            <a href="https://codepen.io/carugui" target="_blank"><IconCodepen></IconCodepen></a>
+            <a href="https://codepen.io/carugui" target="_blank"><h1 className="h5">CodePen</h1></a>
             
-                <a href="https://codepen.io/carugui" target="_blank"><IconCodepen></IconCodepen></a>
-                <a href="https://codepen.io/carugui" target="_blank"><h1 className="h5">CodePen</h1></a>
-                
-            </div>
-        </Draggable>
+        </div>
+        
 
     )
 }
