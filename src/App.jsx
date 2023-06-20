@@ -94,7 +94,7 @@ function App() {
               <MailDesktop text="Correo" />
               <FolderDesktop text="Redes Sociales" clickTo={socialsOpen}/>
             </section>
-            <StickyNote text="¡Hola! Soy Carla, bienvenid@ a mi página web. Soy una diseñadora y progamadora web en Valencia" />
+            <StickyNote text="¡Hola! Soy Carla, bienvenid@ a mi página web. Soy una diseñadora y programadora web en Valencia" />
             <Cloud />
           </div>
 
