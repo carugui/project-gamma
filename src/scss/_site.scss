@@ -34,7 +34,7 @@ img {
 
 @media screen and (min-width: $bp-desktop) {
     .section__desktopItems {
-        padding: 4rem;
+        padding: 3rem 3rem 2rem 3rem;
         display: flex;
         flex-direction: column;
         position: fixed;
