@@ -41,6 +41,7 @@ img {
         right: 0;
         top: 0;
         max-height: 100vh;
+        flex-wrap: wrap-reverse;
         //width: 400px;  aplicar cuando haya más de 4 iconos
     }
 }
