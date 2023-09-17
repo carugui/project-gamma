@@ -167,6 +167,8 @@
 
         &__content {
             justify-content: center;
+            height: 100%;
+            overflow: scroll;
 
             &--project-single {
                 
