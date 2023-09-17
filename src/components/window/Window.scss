@@ -162,7 +162,7 @@
     .window {
         left: 0;
         top: 32px; //height of topbar
-        height: calc(100vh - 32px);
+        height: calc((var(--vh, 1vh) * 100) - 32px);
         width: 100vw;
 
         &__content {
