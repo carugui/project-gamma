@@ -49,9 +49,9 @@ export const PROJECTS = [
         "title": "MiWeb",
         "description": "Efectivamente, esta web también está hecha por mí, no podía ser menos. ¡Realizada totalmente con React!",
         "technologies": ["JS", "CSS", "Fetch"],
-        "image": "/img/littleabout.webp",
+        "image": "/img/miweb.webp",
         "styleguide": "https://carugui.netlify.app/styleguide",
-        "figma": "https://www.figma.com/file/VJjXMni2zXvqCcB0Rot1b2/Carla-Cardona---ProjectBeta?type=design&node-id=259%3A146&t=SiVgJ7NRf192ALl1-1",
+        "figma": "",
         "website": "https://carugui.com/little-about/",
         "github": "https://github.com/carugui/project-gamma/tree/feature/react-routes",
         "links": [

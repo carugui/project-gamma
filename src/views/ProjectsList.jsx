@@ -22,6 +22,10 @@ export default function ProjectsList() {
     const projectSingleClose = () => {
         setSelectedProject(null);
     };
+
+    const hasGithubLink = selectedProject && selectedProject.github;
+    const hasFigmaLink = selectedProject && selectedProject.figma;
+
     return <>
 
         <Window title='Proyectos' size="medium" goTo="/" content =
@@ -56,11 +60,17 @@ export default function ProjectsList() {
                     <a className="content__3" href={selectedProject.website} target='_blank'><img  src={selectedProject.image} alt={selectedProject.title} /></a>
                     <div className="content__4">
                         <Button link='true' target='_blank' text='Guía de estilos' goTo={selectedProject.styleguide}/>
-                        <Button link='true' target='_blank' text='Figma' goTo={selectedProject.figma}/>
+                        {hasGithubLink && (
+                            <Button link='true' target='_blank' text='Github' goTo={selectedProject.github} />
+                        )}
+                        
+                        
                     </div>
                     <div className="content__5">
-                        <Button text='Volver' type='secondary' handleClick={projectSingleClose}/>
-                        
+                        <Button text='Volver' type='secondary' handleClick={projectSingleClose}/> 
+                        {hasFigmaLink && (
+                            <Button link='true' target='_blank' text='Figma' goTo={selectedProject.figma}/>
+                        )}
                     </div>
 
                 </Fragment>}

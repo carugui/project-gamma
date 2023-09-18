@@ -112,11 +112,17 @@
                 grid-area: four;
                 display: flex;
                 gap: 15px;
+
+                & a {
+                    flex-grow: 1;
+                }
             }
 
             & .content__5 {
                 grid-area: five;
                 display: flex;
+                gap: 15px;
+
 
                 & button {
                     flex-grow: 1;
@@ -183,6 +189,14 @@
                 "five";
 
                 padding-bottom: 70px;
+
+                & .content__4 {
+                    flex-direction: column;
+                }
+    
+                & .content__5 {
+                    flex-direction: column-reverse;
+                }
 
             }
 
