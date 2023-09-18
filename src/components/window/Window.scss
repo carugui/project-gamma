@@ -187,7 +187,10 @@
 
             &--about {
                 padding: 0;
-                height: auto;
+
+                & .about-page {
+                    height: auto;
+                }
 
                 .about-page__header {
                     flex-direction: column;
