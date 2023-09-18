@@ -176,6 +176,7 @@
             justify-content: center;
             height: 100%;
             overflow: scroll;
+            align-content: flex-start;
 
             &--project-single {
                 
@@ -217,7 +218,7 @@
 
         &__size-medium {
             width: 100vw;
-            height: calc(100vh - 32px);
+            height: calc((var(--vh, 1vh) * 100) - 32px);
         }
     }
 
