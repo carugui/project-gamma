@@ -31,7 +31,7 @@ export const PROJECTS = [
         "technologies": ["JS", "CSS", "Fetch"],
         "image": "/img/littleabout.webp",
         "styleguide": "https://carugui.com/little-about/styleguide/",
-        "figma": "https://www.figma.com/file/VJjXMni2zXvqCcB0Rot1b2/Carla-Cardona---ProjectBeta?type=design&node-id=259%3A146&t=SiVgJ7NRf192ALl1-1",
+        "figma": "https://www.figma.com/file/xtOnt9nHlZJwIVpaDAlFnF/Cardona-Carla-ProjectAlpha?type=design&node-id=0%3A1&mode=design&t=Kc7D1AhSkZoBnDIQ-1",
         "website": "https://carugui.com/little-about/",
         "github": "https://github.com/carugui/projectalpha",
         "links": [
